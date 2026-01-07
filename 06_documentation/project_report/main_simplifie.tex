@@ -1,0 +1,303 @@
+\documentclass[12pt,a4paper]{report}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+% ============================================================================
+% CONFIGURATION
+% ============================================================================
+
+% Couleurs personnalisées
+\definecolor{primarycolor}{RGB}{0,102,204}
+\definecolor{secondarycolor}{RGB}{0,153,76}
+\definecolor{accentcolor}{RGB}{204,0,102}
+\definecolor{codecolor}{RGB}{245,245,245}
+
+% Configuration des hyperliens
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    filecolor=primarycolor,
+    urlcolor=primarycolor,
+    citecolor=primarycolor,
+    pdftitle={Rapport Projet BI - GreenCity},
+    pdfauthor={BELOUARRAQ MOHAMMED},
+    pdfsubject={Business Intelligence},
+    pdfkeywords={BI, Data Warehouse, ETL, Big Data}
+}
+
+% Configuration des listings (code)
+\lstset{
+    backgroundcolor=\color{codecolor},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    rulecolor=\color{black!30},
+    tabsize=2,
+    showstringspaces=false
+}
+
+% Configuration des titres
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{primarycolor}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primarycolor}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondarycolor}}
+  {\thesubsection}{1em}{}
+
+% Configuration des en-têtes et pieds de page
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{Projet BI - GreenCity | ENSA Tétouan | 2025-2026}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Style pour la première page de chaque chapitre
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{Projet BI - GreenCity | ENSA Tétouan | 2025-2026}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.5pt}
+}
+
+% ============================================================================
+% COMMANDES PERSONNALISÉES
+% ============================================================================
+
+% Commande pour les KPI
+\newcommand{\kpi}[4]{
+    \textbf{#1} \\
+    \textit{Description:} #2 \\
+    \textit{Formule:} \texttt{#3} \\
+    \textit{Unité:} #4
+}
+
+% Commande pour les tables de base de données
+\newcommand{\dbtable}[2]{
+    \texttt{\textbf{#1}} \textit{(#2)}
+}
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+% ============================================================================
+% PAGE DE GARDE
+% ============================================================================
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Large \textbf{ÉCOLE NATIONALE DES SCIENCES APPLIQUÉES DE TÉTOUAN}}\\[0.5cm]
+    {\large 3ème année Cycle d'ingénieurs -- Génie Informatique}\\[2cm]
+    
+    % Titre
+    {\color{primarycolor}\rule{\linewidth}{0.5mm}}\\[0.4cm]
+    {\huge \textbf{Projet Business Intelligence}}\\[0.3cm]
+    {\LARGE \textbf{GreenCity Energy Management}}\\[0.3cm]
+    {\Large Conception et Mise en Œuvre d'un Système Décisionnel Complet}\\[0.3cm]
+    {\color{primarycolor}\rule{\linewidth}{0.5mm}}\\[2cm]
+    
+    % Informations sur le projet
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        \textbf{\large Système de Gestion Énergétique des Bâtiments Intelligents}\\[0.5cm]
+        \textit{Extraction, Transformation et Chargement (ETL) de données hétérogènes}\\
+        \textit{Analyse de la Consommation Énergétique, Rentabilité et Impact Environnemental}
+    \end{minipage}\\[2cm]
+    
+    % Auteurs
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            \textbf{Réalisé par :}\\
+            \textit{BELOUARRAQ Mohammed}\\
+            \textit{ELKHOUMSI Imane}
+        \end{flushleft}
+    \end{minipage}\\[1cm]
+    
+    % Encadrement
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            \textbf{Encadré par :}\\
+            Prof. Yacine EL YOUNOUSSI
+        \end{flushleft}
+    \end{minipage}\\[2cm]
+    
+    \vfill
+    
+    % Date
+    {\large Année Universitaire 2025-2026}
+    
+\end{titlepage}
+
+% ============================================================================
+% REMERCIEMENTS
+% ============================================================================
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui ont contribué, de près ou de loin, à la réalisation de ce projet de Business Intelligence.
+
+Nos remerciements s'adressent en premier lieu à notre encadrant, le Professeur \textbf{Y. EL YOUNOUSSI}, pour ses conseils précieux, son soutien continu et son expertise tout au long de ce projet. Sa disponibilité et ses orientations nous ont été d'une aide inestimable.
+
+Nous remercions également l'ensemble du corps professoral de l'\textbf{École Nationale des Sciences Appliquées de Tétouan} pour la qualité de la formation dispensée en Business Intelligence et en Génie Informatique.
+
+Nous exprimons notre reconnaissance à l'administration de l'ENSA de Tétouan pour avoir mis à notre disposition les ressources nécessaires à la réalisation de ce projet.
+
+Enfin, nous remercions nos familles et nos proches pour leur soutien moral et leurs encouragements tout au long de notre parcours académique.
+
+\vspace{2cm}
+
+\begin{flushright}
+\textit{L'équipe GreenCity}
+\end{flushright}
+
+\cleardoublepage
+
+% ============================================================================
+% RÉSUMÉ
+% ============================================================================
+
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+
+Ce rapport présente la conception et la mise en œuvre d'un système décisionnel complet pour \textbf{GreenCity}, une entreprise fictive spécialisée dans la gestion énergétique des bâtiments intelligents. Le projet s'inscrit dans le cadre du module Business Intelligence de la 3ème année du cycle d'ingénieurs en Génie Informatique à l'ENSA de Tétouan.
+
+\textbf{Contexte :} GreenCity gère plusieurs bâtiments intelligents répartis sur différentes régions et souhaite centraliser ses données pour surveiller la consommation énergétique, évaluer la rentabilité économique et mesurer l'impact environnemental.
+
+\textbf{Objectif :} Concevoir un Data Warehouse composé de trois Data Marts thématiques indépendants (Consommation Énergétique, Rentabilité Économique, Impact Environnemental) alimentés par un processus ETL automatisé à partir de sources de données hétérogènes (MySQL, fichiers JSON et CSV).
+
+\textbf{Méthodologie :} Le projet a suivi l'approche dimensionnelle de Kimball avec une architecture en étoile. Le processus ETL a été implémenté en utilisant \textbf{Pentaho Data Integration (PDI)} pour les transformations visuelles et \textbf{Python} pour les scripts automatisés. L'automatisation a été mise en place avec \textbf{Apache Airflow}. Le reporting a été réalisé avec \textbf{Power BI}.
+
+\textbf{Résultats :} Le système développé permet l'analyse de plus de 22~000 enregistrements répartis sur 3 tables de faits et 6 dimensions. Plus de 30 KPI ont été implémentés et visualisés à travers des dashboards interactifs. Le processus ETL est entièrement automatisé et s'exécute quotidiennement avec extraction incrémentale.
+
+\textbf{Mots-clés :} Business Intelligence, Data Warehouse, Data Mart, ETL, Pentaho, MySQL, Power BI, Architecture en Étoile, Kimball, Consommation Énergétique, Smart Buildings, Apache Airflow.
+
+\cleardoublepage
+
+% ============================================================================
+% TABLE DES MATIÈRES + LISTES
+% ============================================================================
+
+\tableofcontents
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+% ============================================================================
+% LISTE DES ABRÉVIATIONS
+% ============================================================================
+
+\chapter*{Liste des abréviations}
+\addcontentsline{toc}{chapter}{Liste des abréviations}
+
+\begin{tabular}{ll}
+\textbf{BI} & Business Intelligence (Intelligence d'Affaires) \\
+\textbf{CA} & Chiffre d'Affaires \\
+\textbf{CSV} & Comma-Separated Values (Valeurs séparées par des virgules) \\
+\textbf{DW} & Data Warehouse (Entrepôt de Données) \\
+\textbf{ETL} & Extract, Transform, Load (Extraire, Transformer, Charger) \\
+\textbf{ENSA} & École Nationale des Sciences Appliquées \\
+\textbf{JSON} & JavaScript Object Notation \\
+\textbf{KPI} & Key Performance Indicator (Indicateur Clé de Performance) \\
+\textbf{OLAP} & Online Analytical Processing (Traitement Analytique en Ligne) \\
+\textbf{OLTP} & Online Transaction Processing (Traitement Transactionnel en Ligne) \\
+\textbf{PDI} & Pentaho Data Integration \\
+\textbf{SGBD} & Système de Gestion de Base de Données \\
+\textbf{SQL} & Structured Query Language (Langage de Requête Structuré) \\
+\textbf{SCD} & Slowly Changing Dimension (Dimension à Évolution Lente) \\
+\textbf{TTC} & Toutes Taxes Comprises \\
+\textbf{HT} & Hors Taxes \\
+\textbf{TVA} & Taxe sur la Valeur Ajoutée \\
+\textbf{IoT} & Internet of Things (Internet des Objets) \\
+\textbf{CO\textsubscript{2}} & Dioxyde de Carbone \\
+\textbf{kWh} & Kilowatt-heure \\
+\textbf{m\textsuperscript{3}} & Mètre cube \\
+\textbf{MAD} & Dirham Marocain \\
+\end{tabular}
+
+\cleardoublepage
+
+% ============================================================================
+% INTRODUCTION GÉNÉRALE (non numérotée)
+% ============================================================================
+
+\chapter*{Introduction Générale}
+\addcontentsline{toc}{chapter}{Introduction Générale}
+
+À l’ère de la transformation numérique, les organisations produisent et collectent quotidiennement des volumes considérables de données issues de sources multiples et hétérogènes. Cette explosion des données représente à la fois un défi majeur — lié à leur gestion, leur intégration et leur qualité — et une opportunité stratégique, à condition de pouvoir les exploiter efficacement pour soutenir la prise de décision.
+
+Dans ce contexte, la \textbf{Business Intelligence (BI)} s’impose comme une approche technologique et méthodologique essentielle permettant de transformer des données brutes en informations pertinentes et exploitables. Les systèmes décisionnels modernes reposent sur des architectures structurées intégrant des Data Warehouses, des processus ETL (Extract, Transform, Load) robustes et des outils de visualisation interactifs destinés aux décideurs.
+
+\textbf{GreenCity}, entreprise spécialisée dans la gestion énergétique des bâtiments intelligents, illustre parfaitement cette problématique. Elle administre un ensemble de bâtiments répartis sur plusieurs régions et collecte des données provenant de diverses sources :
+\begin{itemize}
+    \item des capteurs IoT mesurant la consommation d’électricité, d’eau et de gaz,
+    \item un système transactionnel MySQL gérant les clients, les factures et les paiements,
+    \item des rapports environnementaux sous forme de fichiers CSV (émissions de CO\textsubscript{2}, taux de recyclage).
+\end{itemize}
+
+Ces données, dispersées et de formats variés, ne peuvent être exploitées efficacement sans un processus de centralisation, de nettoyage et de structuration. GreenCity exprime ainsi le besoin de disposer d’une vision globale et fiable afin de suivre sa consommation énergétique, d’évaluer sa rentabilité économique et de mesurer son impact environnemental à l’aide d’indicateurs clés de performance (KPI).
+
+\textbf{L’objectif principal de ce projet} est de concevoir et de mettre en œuvre un système décisionnel complet répondant à ces besoins. Ce système repose sur la création de trois Data Marts thématiques indépendants — \textit{Consommation Énergétique}, \textit{Rentabilité Économique} et \textit{Impact Environnemental} — alimentés par un processus ETL automatisé et exploités à travers des tableaux de bord interactifs développés avec Power BI.
+
+Le projet s’appuie sur l’approche dimensionnelle de Kimball avec une modélisation en étoile, utilise \textbf{Pentaho Data Integration} et \textbf{Python} pour l’implémentation des processus ETL, et adopte \textbf{MySQL} comme système de gestion du Data Warehouse.
+
+
+
+
+
+
+\cleardoublepage
+
+% ============================================================================
+% CHAPITRES (numérotés) - CHACUN COMMENCE SUR UNE NOUVELLE PAGE AUTOMATIQUEMENT
+% ============================================================================
+
+% ============================================================================
+% CHAPITRE 1
+% ============================================================================
+

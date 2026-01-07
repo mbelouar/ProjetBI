@@ -1,0 +1,201 @@
+﻿id_client,code_client,type_client,nom,prenom,raison_sociale,segment_client,ville,date_debut,date_fin,est_actuel,date_ajout,date_maj
+1,CLI0001,Administration,Lambert S.A.,,Lambert S.A.,Économique,Barthelemy,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+2,CLI0002,Entreprise,Faivre,,Faivre,Standard,Gimenez,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+3,CLI0003,Administration,Jacob Lemonnier S.A.,,Jacob Lemonnier S.A.,Standard,Letellier-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+4,CLI0004,Particulier,Nguyen,Claire,,Premium,Sainte Alex,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+5,CLI0005,Administration,Marques,,Marques,Premium,Brunet-sur-Dupuis,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+6,CLI0006,Particulier,Thibault,Martin,,Économique,Henry,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+7,CLI0007,Entreprise,Moreno SA,,Moreno SA,Premium,Turpinnec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+8,CLI0008,Entreprise,Moulin,,Moulin,Standard,Clément,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+9,CLI0009,Administration,Berthelot,,Berthelot,Économique,Boutin,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+10,CLI0010,Administration,Grondin,,Grondin,Économique,Colin,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+11,CLI0011,Administration,Paris Lambert SA,,Paris Lambert SA,Standard,Saint Henri-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+12,CLI0012,Particulier,Menard,Georges,,Premium,Saint Olivier-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+13,CLI0013,Particulier,Bernard,Anouk,,Économique,Da Costa,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+14,CLI0014,Entreprise,Le Gall Valentin et Fils,,Le Gall Valentin et Fils,Standard,Sainte Hortense,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+15,CLI0015,Administration,Paul,,Paul,Standard,Sainte Philippeboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+16,CLI0016,Administration,Descamps S.A.S.,,Descamps S.A.S.,Standard,Langlois,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+17,CLI0017,Entreprise,Morin,,Morin,Premium,Muller,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+18,CLI0018,Entreprise,Guillou,,Guillou,Standard,Bertrandboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+19,CLI0019,Entreprise,Dupré,,Dupré,Premium,DelahayeBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+20,CLI0020,Entreprise,Prévost,,Prévost,Premium,Pelletier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+21,CLI0021,Administration,Laporte Bouchet S.A.S.,,Laporte Bouchet S.A.S.,Économique,Ribeiro-sur-Riou,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+22,CLI0022,Particulier,Pineau,Camille,,Premium,Renault-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+23,CLI0023,Administration,Bousquet Aubert S.A.S.,,Bousquet Aubert S.A.S.,Premium,Letellier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+24,CLI0024,Entreprise,Sanchez,,Sanchez,Économique,Georges,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+25,CLI0025,Entreprise,Bourdon,,Bourdon,Premium,De Sousaboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+26,CLI0026,Entreprise,Coste,,Coste,Premium,Bonnet,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+27,CLI0027,Particulier,Rivière,Claude,,Économique,Godard,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+28,CLI0028,Particulier,Dumont,Élodie,,Standard,Saint Christelledan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+29,CLI0029,Entreprise,Sauvage S.A.S.,,Sauvage S.A.S.,Économique,Paris,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+30,CLI0030,Particulier,Lévy,Michèle,,Premium,Launay,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+31,CLI0031,Particulier,Besson,Honoré,,Standard,Brunel,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+32,CLI0032,Administration,Meyer Descamps S.A.R.L.,,Meyer Descamps S.A.R.L.,Standard,Maillot,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+33,CLI0033,Entreprise,Moreno Descamps S.A.R.L.,,Moreno Descamps S.A.R.L.,Économique,Sainte Capucinenec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+34,CLI0034,Particulier,Legros,Richard,,Standard,Saint Lucas,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+35,CLI0035,Administration,Charpentier,,Charpentier,Premium,Baudrynec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+36,CLI0036,Particulier,Charpentier,Gabriel,,Standard,Merle,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+37,CLI0037,Entreprise,Laporte S.A.S.,,Laporte S.A.S.,Standard,Samson-sur-Delorme,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+38,CLI0038,Particulier,Weiss,Luce,,Premium,Sainte Véronique,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+39,CLI0039,Particulier,Bonneau,Jeannine,,Standard,Saint Augustin-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+40,CLI0040,Particulier,Hardy,Dorothée,,Standard,Ramos,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+41,CLI0041,Administration,Faure,,Faure,Standard,Olivier-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+42,CLI0042,Administration,Roussel,,Roussel,Standard,Leclercqboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+43,CLI0043,Particulier,Pinto,Pauline,,Standard,Lebreton,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+44,CLI0044,Entreprise,Louis S.A.R.L.,,Louis S.A.R.L.,Premium,Thierry,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+45,CLI0045,Entreprise,Chevalier SA,,Chevalier SA,Standard,Durand-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+46,CLI0046,Entreprise,Martin,,Martin,Standard,Sainte GrégoireVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+47,CLI0047,Administration,Merle Pottier S.A.R.L.,,Merle Pottier S.A.R.L.,Premium,Valette,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+48,CLI0048,Administration,Denis,,Denis,Premium,Schneider,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+49,CLI0049,Administration,Blot Hebert SARL,,Blot Hebert SARL,Standard,Étienne,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+50,CLI0050,Administration,Potier Lebreton SARL,,Potier Lebreton SARL,Économique,Lemonnier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+51,CLI0051,Administration,Legrand Sauvage S.A.,,Legrand Sauvage S.A.,Économique,Michelboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+52,CLI0052,Entreprise,Courtois,,Courtois,Standard,Lesage,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+53,CLI0053,Administration,Paul S.A.,,Paul S.A.,Standard,Brunet-sur-Picard,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+54,CLI0054,Administration,Leroy SA,,Leroy SA,Premium,Legrosdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+55,CLI0055,Entreprise,Bouvier Wagner SARL,,Bouvier Wagner SARL,Économique,Ledoux,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+56,CLI0056,Entreprise,Didier,,Didier,Standard,Aubry,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+57,CLI0057,Entreprise,Lambert,,Lambert,Économique,MaréchalVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+58,CLI0058,Entreprise,Reynaud,,Reynaud,Économique,Guillon-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+59,CLI0059,Administration,Aubry,,Aubry,Économique,Beckerdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+60,CLI0060,Administration,Paul Guillaume S.A.S.,,Paul Guillaume S.A.S.,Économique,Fischer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+61,CLI0061,Administration,Voisin,,Voisin,Premium,Grenier-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+62,CLI0062,Particulier,Dupuis,Patrick,,Standard,Martel-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+63,CLI0063,Administration,Imbert,,Imbert,Économique,Gautier-sur-Daniel,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+64,CLI0064,Entreprise,Lucas,,Lucas,Standard,Saint Guillaumedan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+65,CLI0065,Administration,Jacob,,Jacob,Standard,Tessier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+66,CLI0066,Administration,Martel Brunet S.A.R.L.,,Martel Brunet S.A.R.L.,Premium,Wagner,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+67,CLI0067,Entreprise,Lefèvre,,Lefèvre,Économique,Saint Danieldan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+68,CLI0068,Administration,Lecoq Dufour et Fils,,Lecoq Dufour et Fils,Standard,Lamynec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+69,CLI0069,Particulier,Perrot,Honoré,,Économique,Faivre,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+70,CLI0070,Particulier,Gaudin,Stéphane,,Premium,Berthelotdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+71,CLI0071,Particulier,Hardy,Timothée,,Standard,Chevallier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+72,CLI0072,Particulier,Rémy,Madeleine,,Standard,Carpentierdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+73,CLI0073,Administration,Garcia,,Garcia,Économique,Sainte Patriciaboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+74,CLI0074,Administration,Lambert,,Lambert,Standard,Peron,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+75,CLI0075,Particulier,Fouquet,Émilie,,Premium,Bodin,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+76,CLI0076,Particulier,Maurice,Lucie,,Premium,Saint Édith-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+77,CLI0077,Particulier,Fleury,Sylvie,,Premium,LefèvreVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+78,CLI0078,Administration,Gay,,Gay,Économique,Garnier-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+79,CLI0079,Administration,Labbé,,Labbé,Premium,Malletnec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+80,CLI0080,Particulier,Peltier,Alex,,Standard,Samson,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+81,CLI0081,Entreprise,Lemoine S.A.R.L.,,Lemoine S.A.R.L.,Économique,Saint Henriette-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+82,CLI0082,Administration,Royer Hernandez SARL,,Royer Hernandez SARL,Économique,Gillet-sur-Boulanger,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+83,CLI0083,Entreprise,Ribeiro Lebrun S.A.S.,,Ribeiro Lebrun S.A.S.,Économique,Navarro,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+84,CLI0084,Administration,Maillet,,Maillet,Standard,ValentinBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+85,CLI0085,Administration,Brun,,Brun,Standard,Blot-sur-Charrier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+86,CLI0086,Administration,Duval,,Duval,Standard,Saint Claudeboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+87,CLI0087,Particulier,Traore,Patrick,,Économique,Allainnec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+88,CLI0088,Administration,Lopes Chrétien et Fils,,Lopes Chrétien et Fils,Standard,Bonneau,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+89,CLI0089,Entreprise,Lemaire,,Lemaire,Standard,Lebreton,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+90,CLI0090,Entreprise,Vallée S.A.,,Vallée S.A.,Premium,Valette,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+91,CLI0091,Entreprise,Baudry SA,,Baudry SA,Économique,Lagarde-sur-Marty,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+92,CLI0092,Particulier,Gaillard,Laetitia,,Premium,Lopez-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+93,CLI0093,Particulier,Menard,William,,Économique,Sainte Luceboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+94,CLI0094,Entreprise,Carpentier,,Carpentier,Standard,Sainte Luc,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+95,CLI0095,Entreprise,Paris Morin et Fils,,Paris Morin et Fils,Standard,Mathieu,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+96,CLI0096,Entreprise,Guérin,,Guérin,Standard,Mace,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+97,CLI0097,Administration,Chauvet,,Chauvet,Économique,Leclerc,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+98,CLI0098,Administration,Letellier Michaud SARL,,Letellier Michaud SARL,Standard,PiresBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+99,CLI0099,Entreprise,Charles S.A.,,Charles S.A.,Standard,Regnier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+100,CLI0100,Entreprise,Ruiz et Fils,,Ruiz et Fils,Économique,Saint Colette,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+101,CLI0101,Administration,Brun,,Brun,Économique,Adam,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+102,CLI0102,Entreprise,Dumas et Fils,,Dumas et Fils,Premium,MailletVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+103,CLI0103,Entreprise,Maréchal SA,,Maréchal SA,Premium,Fernandes,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+104,CLI0104,Administration,Allard Perrot et Fils,,Allard Perrot et Fils,Économique,Albert,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+105,CLI0105,Administration,Bodin S.A.,,Bodin S.A.,Premium,Gautier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+106,CLI0106,Particulier,Bouvier,Anouk,,Économique,Hamon,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+107,CLI0107,Entreprise,Bertin,,Bertin,Économique,Poirier-sur-Sanchez,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+108,CLI0108,Particulier,Imbert,Capucine,,Premium,Lemoine,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+109,CLI0109,Particulier,Gérard,Arthur,,Standard,Barreboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+110,CLI0110,Entreprise,Julien S.A.S.,,Julien S.A.S.,Standard,Schmitt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+111,CLI0111,Entreprise,Maury,,Maury,Standard,Dumont,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+112,CLI0112,Entreprise,Lopez,,Lopez,Standard,Lemonnierboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+113,CLI0113,Entreprise,Le Gall,,Le Gall,Standard,Sainte CarolineVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+114,CLI0114,Entreprise,Marty SARL,,Marty SARL,Premium,Sainte Raymond,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+115,CLI0115,Particulier,Picard,Alexandria,,Standard,Lejeune,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+116,CLI0116,Particulier,Aubry,Margaud,,Économique,Faure,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+117,CLI0117,Particulier,Le Gall,Sabine,,Premium,Thibault,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+118,CLI0118,Particulier,Clément,Marguerite,,Économique,Masse-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+119,CLI0119,Particulier,Giraud,Jacques,,Standard,Baron,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+120,CLI0120,Administration,Marie,,Marie,Premium,Bazin-sur-Lemonnier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+121,CLI0121,Entreprise,Blot,,Blot,Standard,Saint Capucine-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+122,CLI0122,Administration,Lefèvre,,Lefèvre,Économique,Saint Olivierboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+123,CLI0123,Particulier,Schmitt,Christelle,,Standard,Saint Christelle,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+124,CLI0124,Particulier,Brunel,Suzanne,,Standard,Dupréboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+125,CLI0125,Entreprise,Pottier,,Pottier,Standard,Collet-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+126,CLI0126,Particulier,Gallet,Auguste,,Premium,Ledoux-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+127,CLI0127,Administration,Monnier Hubert et Fils,,Monnier Hubert et Fils,Premium,Pasquier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+128,CLI0128,Entreprise,Bourgeois Le Goff S.A.R.L.,,Bourgeois Le Goff S.A.R.L.,Économique,Antoinenec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+129,CLI0129,Particulier,Morel,Élisabeth,,Économique,François,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+130,CLI0130,Entreprise,Petitjean,,Petitjean,Économique,Pires,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+131,CLI0131,Entreprise,Peltier SA,,Peltier SA,Premium,Humbert,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+132,CLI0132,Entreprise,Noël,,Noël,Premium,Saint Victoiredan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+133,CLI0133,Entreprise,Ramos et Fils,,Ramos et Fils,Premium,Boulanger,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+134,CLI0134,Entreprise,Guichard SARL,,Guichard SARL,Économique,Raymond,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+135,CLI0135,Entreprise,Coulon,,Coulon,Économique,RaymondVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+136,CLI0136,Particulier,Bodin,Claude,,Économique,Pons-sur-Blanc,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+137,CLI0137,Administration,Mahe et Fils,,Mahe et Fils,Standard,Gosselindan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+138,CLI0138,Administration,Noël,,Noël,Standard,Nicolas,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+139,CLI0139,Administration,Leleu S.A.R.L.,,Leleu S.A.R.L.,Économique,Paris,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+140,CLI0140,Particulier,Sauvage,Susan,,Premium,Lacombe,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+141,CLI0141,Entreprise,Guillon,,Guillon,Premium,Davidboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+142,CLI0142,Administration,Bernier Jourdan S.A.S.,,Bernier Jourdan S.A.S.,Économique,Pierre-sur-Diallo,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+143,CLI0143,Entreprise,Schmitt,,Schmitt,Premium,Peltier-sur-Hernandez,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+144,CLI0144,Entreprise,Legrand,,Legrand,Premium,Saint Marguerite,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+145,CLI0145,Entreprise,Fournier Normand SARL,,Fournier Normand SARL,Standard,JoubertVille,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+146,CLI0146,Administration,Pottier Lamy SA,,Pottier Lamy SA,Économique,Chevallierdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+147,CLI0147,Administration,Durand,,Durand,Premium,Sainte Hugues,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+148,CLI0148,Particulier,Letellier,Anaïs,,Premium,Lecomte,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+149,CLI0149,Entreprise,Renard Gonzalez S.A.,,Renard Gonzalez S.A.,Standard,Saint Timothéedan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+150,CLI0150,Particulier,Lemonnier,Isabelle,,Économique,Coulon,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+151,CLI0151,Administration,Guyot S.A.,,Guyot S.A.,Standard,Lucas,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+152,CLI0152,Particulier,Robin,Anastasie,,Premium,Sainte Alexandrie-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+153,CLI0153,Entreprise,Chevallier,,Chevallier,Économique,Barre,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+154,CLI0154,Administration,Charrier S.A.,,Charrier S.A.,Économique,Maury,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+155,CLI0155,Administration,Berger SA,,Berger SA,Économique,Georges-sur-Leduc,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+156,CLI0156,Administration,Guillon Gosselin S.A.,,Guillon Gosselin S.A.,Économique,GaudinBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+157,CLI0157,Administration,Becker et Fils,,Becker et Fils,Standard,Lejeune-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+158,CLI0158,Entreprise,Dijoux SA,,Dijoux SA,Premium,Pasquier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+159,CLI0159,Particulier,Guillet,Joseph,,Standard,Dias,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+160,CLI0160,Administration,Perrier Bousquet SA,,Perrier Bousquet SA,Économique,Saint Claude,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+161,CLI0161,Particulier,Renault,Léon,,Économique,Saint Éric,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+162,CLI0162,Administration,Perrot,,Perrot,Économique,Lemonnier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+163,CLI0163,Administration,Pires,,Pires,Économique,Menard,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+164,CLI0164,Particulier,Maillet,Océane,,Premium,Maurice,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+165,CLI0165,Entreprise,Chevalier et Fils,,Chevalier et Fils,Premium,Perrotnec,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+166,CLI0166,Administration,Mathieu,,Mathieu,Économique,Didier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+167,CLI0167,Particulier,Bonnin,Odette,,Premium,Saint Astrid,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+168,CLI0168,Administration,Coulon,,Coulon,Premium,Sainte Margaret-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+169,CLI0169,Entreprise,Valette Jacquet SARL,,Valette Jacquet SARL,Premium,Prévost,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+170,CLI0170,Administration,Dupuy,,Dupuy,Standard,Saint Pénélope,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+171,CLI0171,Entreprise,Charles S.A.S.,,Charles S.A.S.,Standard,Bigot-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+172,CLI0172,Particulier,Rocher,Élodie,,Standard,Saint Adélaïde,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+173,CLI0173,Entreprise,Lagarde S.A.R.L.,,Lagarde S.A.R.L.,Premium,Blondel,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+174,CLI0174,Entreprise,Delahaye,,Delahaye,Standard,Sainte René-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+175,CLI0175,Administration,Robin Fernandes SA,,Robin Fernandes SA,Économique,RichardBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+176,CLI0176,Particulier,Pires,Capucine,,Économique,Diaz-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+177,CLI0177,Particulier,Martineau,Martin,,Premium,Lagarde-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+178,CLI0178,Entreprise,Barbier Didier SA,,Barbier Didier SA,Économique,Munozdan,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+179,CLI0179,Administration,Aubert,,Aubert,Premium,Moreau,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+180,CLI0180,Entreprise,Lebrun Mace SA,,Lebrun Mace SA,Standard,Gautier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+181,CLI0181,Entreprise,Masse et Fils,,Masse et Fils,Économique,Saint Victoire,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+182,CLI0182,Entreprise,Roussel et Fils,,Roussel et Fils,Économique,Joubert,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+183,CLI0183,Administration,Dias,,Dias,Économique,Hernandez,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+184,CLI0184,Particulier,Benoit,Thomas,,Économique,Sainte Hélène-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+185,CLI0185,Administration,Giraud,,Giraud,Premium,Vincent-la-Forêt,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+186,CLI0186,Particulier,Gimenez,Geneviève,,Économique,Caron-les-Bains,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+187,CLI0187,Particulier,Masse,Noémi,,Standard,Hoarau-sur-Mer,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+188,CLI0188,Administration,Pottier,,Pottier,Standard,Pottier,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+189,CLI0189,Particulier,Marie,Nicole,,Standard,Lévy,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+190,CLI0190,Administration,Mallet S.A.S.,,Mallet S.A.S.,Standard,LacombeBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+191,CLI0191,Particulier,Blanc,Julien,,Standard,Huet,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+192,CLI0192,Administration,Chevallier,,Chevallier,Économique,Blin,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+193,CLI0193,Particulier,Dos Santos,Thierry,,Standard,Fernandes,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+194,CLI0194,Particulier,Payet,Julien,,Économique,Gonzalez,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+195,CLI0195,Entreprise,Goncalves Olivier S.A.,,Goncalves Olivier S.A.,Premium,Fouquetboeuf,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+196,CLI0196,Particulier,Valentin,Élise,,Standard,Pinto,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+197,CLI0197,Administration,Blot S.A.S.,,Blot S.A.S.,Standard,Wagner,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+198,CLI0198,Entreprise,Munoz S.A.R.L.,,Munoz S.A.R.L.,Économique,Bernard,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+199,CLI0199,Entreprise,Albert S.A.R.L.,,Albert S.A.R.L.,Standard,Lefèvre,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+200,CLI0200,Entreprise,David Martineau S.A.S.,,David Martineau S.A.S.,Standard,LucasBourg,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45

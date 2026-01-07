@@ -1,0 +1,1766 @@
+\documentclass[12pt,a4paper]{report}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+% ============================================================================
+% CONFIGURATION
+% ============================================================================
+
+% Couleurs personnalisées
+\definecolor{primarycolor}{RGB}{0,102,204}
+\definecolor{secondarycolor}{RGB}{0,153,76}
+\definecolor{accentcolor}{RGB}{204,0,102}
+\definecolor{codecolor}{RGB}{245,245,245}
+
+% Configuration des hyperliens
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    filecolor=primarycolor,
+    urlcolor=primarycolor,
+    citecolor=primarycolor,
+    pdftitle={Rapport Projet BI - GreenCity},
+    pdfauthor={BELOUARRAQ MOHAMMED},
+    pdfsubject={Business Intelligence},
+    pdfkeywords={BI, Data Warehouse, ETL, Big Data}
+}
+
+% Configuration des listings (code)
+\lstset{
+    backgroundcolor=\color{codecolor},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    rulecolor=\color{black!30},
+    tabsize=2,
+    showstringspaces=false
+}
+
+% Configuration des titres
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{primarycolor}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primarycolor}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondarycolor}}
+  {\thesubsection}{1em}{}
+
+% Configuration des en-têtes et pieds de page
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{Projet BI - GreenCity | ENSA Tétouan | 2025-2026}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Style pour la première page de chaque chapitre
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{Projet BI - GreenCity | ENSA Tétouan | 2025-2026}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.5pt}
+}
+
+% ============================================================================
+% COMMANDES PERSONNALISÉES
+% ============================================================================
+
+% Commande pour les KPI
+\newcommand{\kpi}[4]{
+    \textbf{#1} \\
+    \textit{Description:} #2 \\
+    \textit{Formule:} \texttt{#3} \\
+    \textit{Unité:} #4
+}
+
+% Commande pour les tables de base de données
+\newcommand{\dbtable}[2]{
+    \texttt{\textbf{#1}} \textit{(#2)}
+}
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+% ============================================================================
+% PAGE DE GARDE
+% ============================================================================
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Large \textbf{ÉCOLE NATIONALE DES SCIENCES APPLIQUÉES DE TÉTOUAN}}\\[0.5cm]
+    {\large 3ème année Cycle d'ingénieurs -- Génie Informatique}\\[2cm]
+    
+    % Titre
+    {\color{primarycolor}\rule{\linewidth}{0.5mm}}\\[0.4cm]
+    {\huge \textbf{Projet Business Intelligence}}\\[0.3cm]
+    {\LARGE \textbf{GreenCity Energy Management}}\\[0.3cm]
+    {\Large Conception et Mise en Œuvre d'un Système Décisionnel Complet}\\[0.3cm]
+    {\color{primarycolor}\rule{\linewidth}{0.5mm}}\\[2cm]
+    
+    % Informations sur le projet
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        \textbf{\large Système de Gestion Énergétique des Bâtiments Intelligents}\\[0.5cm]
+        \textit{Extraction, Transformation et Chargement (ETL) de données hétérogènes}\\
+        \textit{Analyse de la Consommation Énergétique, Rentabilité et Impact Environnemental}
+    \end{minipage}\\[2cm]
+    
+    % Auteurs
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            \textbf{Réalisé par :}\\
+            \textit{BELOUARRAQ Mohammed}\\
+            \textit{ELKHOUMSI Imane}
+        \end{flushleft}
+    \end{minipage}\\[1cm]
+    
+    % Encadrement
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            \textbf{Encadré par :}\\
+            Prof. Yacine EL YOUNOUSSI
+        \end{flushleft}
+    \end{minipage}\\[2cm]
+    
+    \vfill
+    
+    % Date
+    {\large Année Universitaire 2025-2026}
+    
+\end{titlepage}
+
+% ============================================================================
+% REMERCIEMENTS
+% ============================================================================
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui ont contribué, de près ou de loin, à la réalisation de ce projet de Business Intelligence.
+
+Nos remerciements s'adressent en premier lieu à notre encadrant, le Professeur \textbf{Y. EL YOUNOUSSI}, pour ses conseils précieux, son soutien continu et son expertise tout au long de ce projet. Sa disponibilité et ses orientations nous ont été d'une aide inestimable.
+
+Nous remercions également l'ensemble du corps professoral de l'\textbf{École Nationale des Sciences Appliquées de Tétouan} pour la qualité de la formation dispensée en Business Intelligence et en Génie Informatique.
+
+Nous exprimons notre reconnaissance à l'administration de l'ENSA de Tétouan pour avoir mis à notre disposition les ressources nécessaires à la réalisation de ce projet.
+
+Enfin, nous remercions nos familles et nos proches pour leur soutien moral et leurs encouragements tout au long de notre parcours académique.
+
+\vspace{2cm}
+
+\begin{flushright}
+\textit{L'équipe GreenCity}
+\end{flushright}
+
+\cleardoublepage
+
+% ============================================================================
+% RÉSUMÉ
+% ============================================================================
+
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+
+Ce rapport présente la conception et la mise en œuvre d'un système décisionnel complet pour \textbf{GreenCity}, une entreprise fictive spécialisée dans la gestion énergétique des bâtiments intelligents. Le projet s'inscrit dans le cadre du module Business Intelligence de la 3ème année du cycle d'ingénieurs en Génie Informatique à l'ENSA de Tétouan.
+
+\textbf{Contexte :} GreenCity gère plusieurs bâtiments intelligents répartis sur différentes régions et souhaite centraliser ses données pour surveiller la consommation énergétique, évaluer la rentabilité économique et mesurer l'impact environnemental.
+
+\textbf{Objectif :} Concevoir un Data Warehouse composé de trois Data Marts thématiques indépendants (Consommation Énergétique, Rentabilité Économique, Impact Environnemental) alimentés par un processus ETL automatisé à partir de sources de données hétérogènes (MySQL, fichiers JSON et CSV).
+
+\textbf{Méthodologie :} Le projet a suivi l'approche dimensionnelle de Kimball avec une architecture en étoile. Le processus ETL a été implémenté en utilisant \textbf{Pentaho Data Integration (PDI)} pour les transformations visuelles et \textbf{Python} pour les scripts automatisés. L'automatisation a été mise en place avec \textbf{Apache Airflow}. Le reporting a été réalisé avec \textbf{Power BI}.
+
+\textbf{Résultats :} Le système développé permet l'analyse de plus de 22~000 enregistrements répartis sur 3 tables de faits et 6 dimensions. Plus de 30 KPI ont été implémentés et visualisés à travers des dashboards interactifs. Le processus ETL est entièrement automatisé et s'exécute quotidiennement avec extraction incrémentale.
+
+\textbf{Mots-clés :} Business Intelligence, Data Warehouse, Data Mart, ETL, Pentaho, MySQL, Power BI, Architecture en Étoile, Kimball, Consommation Énergétique, Smart Buildings, Apache Airflow.
+
+\cleardoublepage
+
+% ============================================================================
+% TABLE DES MATIÈRES + LISTES
+% ============================================================================
+
+\tableofcontents
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+% ============================================================================
+% LISTE DES ABRÉVIATIONS
+% ============================================================================
+
+\chapter*{Liste des abréviations}
+\addcontentsline{toc}{chapter}{Liste des abréviations}
+
+\begin{tabular}{ll}
+\textbf{BI} & Business Intelligence (Intelligence d'Affaires) \\
+\textbf{CA} & Chiffre d'Affaires \\
+\textbf{CSV} & Comma-Separated Values (Valeurs séparées par des virgules) \\
+\textbf{DW} & Data Warehouse (Entrepôt de Données) \\
+\textbf{ETL} & Extract, Transform, Load (Extraire, Transformer, Charger) \\
+\textbf{ENSA} & École Nationale des Sciences Appliquées \\
+\textbf{JSON} & JavaScript Object Notation \\
+\textbf{KPI} & Key Performance Indicator (Indicateur Clé de Performance) \\
+\textbf{OLAP} & Online Analytical Processing (Traitement Analytique en Ligne) \\
+\textbf{OLTP} & Online Transaction Processing (Traitement Transactionnel en Ligne) \\
+\textbf{PDI} & Pentaho Data Integration \\
+\textbf{SGBD} & Système de Gestion de Base de Données \\
+\textbf{SQL} & Structured Query Language (Langage de Requête Structuré) \\
+\textbf{SCD} & Slowly Changing Dimension (Dimension à Évolution Lente) \\
+\textbf{TTC} & Toutes Taxes Comprises \\
+\textbf{HT} & Hors Taxes \\
+\textbf{TVA} & Taxe sur la Valeur Ajoutée \\
+\textbf{IoT} & Internet of Things (Internet des Objets) \\
+\textbf{CO\textsubscript{2}} & Dioxyde de Carbone \\
+\textbf{kWh} & Kilowatt-heure \\
+\textbf{m\textsuperscript{3}} & Mètre cube \\
+\textbf{MAD} & Dirham Marocain \\
+\end{tabular}
+
+\cleardoublepage
+
+% ============================================================================
+% INTRODUCTION GÉNÉRALE (non numérotée)
+% ============================================================================
+
+\chapter*{Introduction Générale}
+\addcontentsline{toc}{chapter}{Introduction Générale}
+
+À l’ère de la transformation numérique, les organisations produisent et collectent quotidiennement des volumes considérables de données issues de sources multiples et hétérogènes. Cette explosion des données représente à la fois un défi majeur — lié à leur gestion, leur intégration et leur qualité — et une opportunité stratégique, à condition de pouvoir les exploiter efficacement pour soutenir la prise de décision.
+
+Dans ce contexte, la \textbf{Business Intelligence (BI)} s’impose comme une approche technologique et méthodologique essentielle permettant de transformer des données brutes en informations pertinentes et exploitables. Les systèmes décisionnels modernes reposent sur des architectures structurées intégrant des Data Warehouses, des processus ETL (Extract, Transform, Load) robustes et des outils de visualisation interactifs destinés aux décideurs.
+
+\textbf{GreenCity}, entreprise spécialisée dans la gestion énergétique des bâtiments intelligents, illustre parfaitement cette problématique. Elle administre un ensemble de bâtiments répartis sur plusieurs régions et collecte des données provenant de diverses sources :
+\begin{itemize}
+    \item des capteurs IoT mesurant la consommation d’électricité, d’eau et de gaz,
+    \item un système transactionnel MySQL gérant les clients, les factures et les paiements,
+    \item des rapports environnementaux sous forme de fichiers CSV (émissions de CO\textsubscript{2}, taux de recyclage).
+\end{itemize}
+
+Ces données, dispersées et de formats variés, ne peuvent être exploitées efficacement sans un processus de centralisation, de nettoyage et de structuration. GreenCity exprime ainsi le besoin de disposer d’une vision globale et fiable afin de suivre sa consommation énergétique, d’évaluer sa rentabilité économique et de mesurer son impact environnemental à l’aide d’indicateurs clés de performance (KPI).
+
+\textbf{L’objectif principal de ce projet} est de concevoir et de mettre en œuvre un système décisionnel complet répondant à ces besoins. Ce système repose sur la création de trois Data Marts thématiques indépendants — \textit{Consommation Énergétique}, \textit{Rentabilité Économique} et \textit{Impact Environnemental} — alimentés par un processus ETL automatisé et exploités à travers des tableaux de bord interactifs développés avec Power BI.
+
+Le projet s’appuie sur l’approche dimensionnelle de Kimball avec une modélisation en étoile, utilise \textbf{Pentaho Data Integration} et \textbf{Python} pour l’implémentation des processus ETL, et adopte \textbf{MySQL} comme système de gestion du Data Warehouse.
+
+
+
+
+
+
+\cleardoublepage
+
+% ============================================================================
+% CHAPITRES (numérotés) - CHACUN COMMENCE SUR UNE NOUVELLE PAGE AUTOMATIQUEMENT
+% ============================================================================
+
+% ============================================================================
+% CHAPITRE 1
+% ============================================================================
+
+\chapter{Contexte du Projet et État de l'Art}
+
+\section{Introduction}
+
+Ce chapitre présente le contexte du projet GreenCity, les concepts fondamentaux de la Business Intelligence et les technologies utilisées.
+
+\section{Présentation de GreenCity}
+
+\textbf{GreenCity} est une entreprise fictive spécialisée dans la gestion énergétique des bâtiments intelligents. Elle gère 50 bâtiments répartis sur 5 régions, équipés de 500 compteurs intelligents collectant des mesures horaires de consommation (électricité, eau, gaz).
+
+\subsection{Problématique}
+
+GreenCity collecte des données à partir de trois sources hétérogènes :
+\begin{itemize}
+    \item \textbf{Systèmes IoT} : fichiers JSON (consommation horaire)
+    \item \textbf{Base MySQL} : clients, factures, paiements, bâtiments
+    \item \textbf{Rapports CSV} : émissions CO\textsubscript{2}, taux de recyclage
+\end{itemize}
+
+Ces données sont dispersées, de qualité variable (doublons, valeurs manquantes, formats incohérents) et difficiles à analyser de manière transversale.
+
+\subsection{Objectifs du projet}
+
+GreenCity souhaite :
+\begin{itemize}
+    \item \textbf{Centraliser} les données dans un Data Warehouse
+    \item \textbf{Analyser} trois axes décisionnels : Consommation Énergétique, Rentabilité Économique, Impact Environnemental
+    \item \textbf{Automatiser} le processus ETL
+    \item \textbf{Visualiser} les KPI via des dashboards interactifs
+\end{itemize}
+
+\section{Concepts de Business Intelligence}
+
+\subsection{Définition}
+
+La \textbf{Business Intelligence (BI)} transforme les données brutes en informations exploitables pour améliorer la prise de décision. Elle repose sur quatre piliers : intégration des données, qualité des données, stockage analytique (Data Warehouse) et visualisation.
+
+\subsection{Architecture BI}
+
+L'architecture comprend :
+\begin{itemize}
+    \item \textbf{Sources} : MySQL, JSON, CSV
+    \item \textbf{Staging} : zone temporaire pour les données extraites
+    \item \textbf{ETL} : Extraction, Transformation, Chargement
+    \item \textbf{Data Warehouse} : stockage analytique optimisé
+    \item \textbf{Reporting} : dashboards Power BI
+\end{itemize}
+
+\subsection{OLTP vs OLAP}
+
+\begin{itemize}
+    \item \textbf{OLTP (Opérationnel)} : transactions courantes, données actuelles, modèle normalisé
+    \item \textbf{OLAP (Analytique)} : analyse décisionnelle, données historiques, modèle dimensionnel (étoile)
+\end{itemize}
+
+\subsection{Modélisation dimensionnelle}
+
+La modélisation dimensionnelle (approche Kimball) repose sur :
+
+\begin{itemize}
+    \item \textbf{Tables de faits} : mesures numériques (consommation, CA, émissions CO\textsubscript{2})
+    \item \textbf{Dimensions} : contexte d'analyse (date, région, bâtiment, client, type d'énergie)
+    \item \textbf{Schéma en étoile} : table de faits au centre, dimensions autour
+    \item \textbf{SCD Type 2} : historisation des changements dans les dimensions
+\end{itemize}
+
+Avantages : simplicité, performance, flexibilité.
+
+\section{Processus ETL}
+
+L'ETL (\textit{Extract, Transform, Load}) alimente le Data Warehouse à partir des sources opérationnelles.
+
+\subsection{Trois phases}
+
+\begin{itemize}
+    \item \textbf{Extraction (E)} : récupération des données depuis MySQL, JSON, CSV (extraction incrémentale)
+    \item \textbf{Transformation (T)} : nettoyage (doublons, valeurs manquantes), enrichissement (calculs, jointures), conformité
+    \item \textbf{Chargement (L)} : insertion dans le DW avec gestion SCD Type 2 pour les dimensions
+\end{itemize}
+
+\section{Technologies utilisées}
+
+\begin{itemize}
+    \item \textbf{Pentaho Data Integration (PDI)} : transformations ETL visuelles (.ktr) et jobs (.kjb)
+    \item \textbf{Python} : scripts d'automatisation (pandas, mysql-connector, json)
+    \item \textbf{MySQL 8.0} : stockage opérationnel et Data Warehouse
+    \item \textbf{Power BI} : dashboards interactifs avec langage DAX
+    \item \textbf{Cron/Task Scheduler} : planification des exécutions
+\end{itemize}
+
+\section{Méthodologie adoptée}
+
+Ce projet adopte l'approche Kimball (Bottom-Up) avec construction par Data Marts thématiques, modélisation dimensionnelle en étoile et dimensions conformes.
+
+\section{Conclusion}
+
+Ce chapitre a présenté le contexte de GreenCity, les concepts fondamentaux de la BI (Data Warehouse, modélisation dimensionnelle, ETL) et les technologies retenues (Pentaho, Python, MySQL, Power BI).
+
+Le prochain chapitre détaille l'analyse des besoins et la spécification des trois Data Marts.
+
+\cleardoublepage
+
+
+% ============================================================================
+% CHAPITRE 2
+% ============================================================================
+
+\chapter{Analyse des Besoins et Spécification}
+
+\section{Introduction}
+
+Ce chapitre présente les trois axes d'analyse prioritaires, les KPI essentiels, les sources de données et les exigences du système.
+
+\section{Trois axes d'analyse}
+
+\subsection{Axe 1 : Consommation Énergétique}
+
+\textbf{Objectif} : Analyser la consommation (électricité, eau, gaz) par compteur, bâtiment, région et période.
+
+\textbf{Grain} : une mesure par compteur et par heure.
+
+\textbf{Questions clés} : Quelle est la consommation totale ? Quels sont les bâtiments les plus consommateurs ? Corrélation température-consommation ?
+
+\subsection{Axe 2 : Rentabilité Économique}
+
+\textbf{Objectif} : Analyser le CA, les marges, le recouvrement et les délais de paiement.
+
+\textbf{Grain} : une facture (avec paiement éventuel).
+
+\textbf{Questions clés} : Quel est le CA par région ? Quels clients sont rentables ? Quel est le taux de recouvrement ?
+
+\subsection{Axe 3 : Impact Environnemental}
+
+\textbf{Objectif} : Mesurer les émissions CO\textsubscript{2} et le taux de recyclage.
+
+\textbf{Grain} : un rapport mensuel par bâtiment.
+
+\textbf{Questions clés} : Quelles sont les émissions totales ? Quels bâtiments polluent le plus ? Sommes-nous conformes aux normes ?
+
+\section{Indicateurs Clés de Performance (KPI)}
+
+Plus de 30 KPI ont été définis pour les trois axes d'analyse.
+
+\subsection{Exemples de KPI principaux}
+
+\begin{table}[H]
+\centering
+\caption{Principaux KPI par axe d'analyse}
+\label{tab:kpi_principaux}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Axe} & \textbf{KPI} & \textbf{Unité} \\
+\hline
+\multirow{3}{*}{Consommation} & Consommation totale & kWh \\
+ & Top 10 bâtiments consommateurs & kWh \\
+ & Consommation par m\textsuperscript{2} & kWh/m\textsuperscript{2} \\
+\hline
+\multirow{3}{*}{Rentabilité} & Chiffre d'affaires total & MAD \\
+ & Taux de marge moyen & \% \\
+ & Taux de recouvrement & \% \\
+\hline
+\multirow{3}{*}{Environnement} & Émissions CO\textsubscript{2} totales & kg \\
+ & Taux de recyclage moyen & \% \\
+ & Ratio CO\textsubscript{2}/consommation & kg/kWh \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Sources de données}
+
+\begin{table}[H]
+\centering
+\caption{Sources de Données Opérationnelles}
+\label{tab:sources_donnees}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Format} & \textbf{Volumétrie} \\
+\hline
+Système IoT & JSON (36 fichiers/an) & 16~000 mesures/jour \\
+\hline
+Facturation & MySQL (9 tables) & 5~000 factures/an \\
+\hline
+Environnement & CSV (12 fichiers/an) & 600 rapports/an \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Exigences principales}
+
+\subsection{Exigences fonctionnelles}
+
+\begin{itemize}
+    \item \textbf{ETL} : extraction incrémentale, nettoyage (doublons, valeurs manquantes), enrichissement, chargement avec SCD Type 2
+    \item \textbf{Reporting} : dashboards interactifs avec filtres, drill-down, export PDF/Excel
+\end{itemize}
+
+\subsection{Exigences non fonctionnelles}
+
+\begin{itemize}
+    \item \textbf{Performance} : ETL < 1 heure, requêtes < 5 secondes
+    \item \textbf{Fiabilité} : taux de succès > 99\%, reprise automatique
+    \item \textbf{Scalabilité} : support 100 bâtiments, 5 ans d'historique
+\end{itemize}
+
+\section{Conclusion}
+
+Ce chapitre a identifié les trois axes d'analyse (Consommation, Rentabilité, Environnement), défini les principaux KPI, spécifié les sources de données et formulé les exigences du système.
+
+Le prochain chapitre détaille la conception du Data Warehouse et la modélisation dimensionnelle.
+
+\cleardoublepage
+
+
+% ============================================================================
+% CHAPITRE 3
+% ============================================================================
+
+\chapter{Conception du Data Warehouse}
+
+\section{Introduction}
+
+Ce chapitre présente l'architecture du Data Warehouse GreenCity et la modélisation des trois Data Marts.
+
+\section{Architecture globale}
+
+Le Data Warehouse adopte une \textbf{architecture en constellation} (\textit{fact constellation}) composée de :
+
+\begin{itemize}
+    \item \textbf{3 tables de faits} : fact\_consommation, fact\_rentabilite, fact\_environnement
+    \item \textbf{6 dimensions conformes} : dim\_date, dim\_region, dim\_batiment, dim\_client, dim\_type\_energie, dim\_compteur
+    \item \textbf{Historisation} : SCD Type 2 pour les dimensions
+    \item \textbf{Volumétrie} : 22~000 enregistrements de faits
+\end{itemize}
+
+\section{Data Mart 1 : Consommation Énergétique}
+
+\subsection{Caractéristiques}
+
+\begin{itemize}
+    \item \textbf{Objectif} : analyser la consommation (électricité, eau, gaz) par compteur, bâtiment, région et période
+    \item \textbf{Grain} : une mesure par compteur et par heure
+    \item \textbf{Dimensions} : date, compteur, bâtiment, région, client, type\_energie
+    \item \textbf{Mesures} : consommation\_kwh, consommation\_m3, consommation\_normalisee, cout\_total, temperature, consommation\_par\_m2
+    \item \textbf{Volumétrie} : 12~000 lignes/jour, 4~380~000 lignes/an
+\end{itemize}
+
+\section{Data Mart 2 : Rentabilité Économique}
+
+\subsection{Caractéristiques}
+
+\begin{itemize}
+    \item \textbf{Objectif} : analyser le CA, les marges, le recouvrement et les délais de paiement
+    \item \textbf{Grain} : une facture (avec paiement éventuel)
+    \item \textbf{Dimensions} : date\_facture, date\_paiement, date\_echeance, client, bâtiment, région, type\_energie
+    \item \textbf{Mesures} : montant\_ttc, marge, taux\_marge, delai\_paiement, retard\_paiement, est\_paye
+    \item \textbf{Particularité} : dimension date à rôles multiples (\textit{role-playing dimension})
+    \item \textbf{Volumétrie} : 5~100 lignes/an
+\end{itemize}
+
+\section{Data Mart 3 : Impact Environnemental}
+
+\subsection{Caractéristiques}
+
+\begin{itemize}
+    \item \textbf{Objectif} : analyser les émissions CO\textsubscript{2}, le taux de recyclage et la conformité environnementale
+    \item \textbf{Grain} : un rapport mensuel par bâtiment
+    \item \textbf{Type} : snapshot périodique mensuel
+    \item \textbf{Dimensions} : date, bâtiment, région
+    \item \textbf{Mesures} : emission\_co2\_kg, taux\_recyclage, ratio\_co2\_consommation, emission\_co2\_par\_m2, est\_conforme\_norme
+    \item \textbf{Volumétrie} : 600 lignes/an
+\end{itemize}
+
+\section{Dimensions conformes}
+
+Les dimensions conformes sont partagées par les trois Data Marts, garantissant la cohérence sémantique.
+
+\begin{table}[H]
+\centering
+\caption{Dimensions conformes du Data Warehouse}
+\label{tab:dimensions_conformes}
+\small
+\begin{tabular}{|l|p{5cm}|l|}
+\hline
+\textbf{Dimension} & \textbf{Attributs principaux} & \textbf{SCD} \\
+\hline
+dim\_date & jour, mois, annee, trimestre, nom\_mois, est\_weekend & -- \\
+\hline
+dim\_region & code\_region, nom\_region, zone\_climatique, population & Type 2 \\
+\hline
+dim\_batiment & code\_batiment, nom, type, surface\_m2, certification & Type 2 \\
+\hline
+dim\_client & code\_client, type\_client, nom, segment & Type 2 \\
+\hline
+dim\_compteur & code\_compteur, numero\_serie, marque, date\_installation & Type 2 \\
+\hline
+dim\_type\_energie & nom\_energie (Électricité, Eau, Gaz), unite, facteur\_co2 & Type 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Gestion de l'historique : SCD Type 2}
+
+Le SCD Type 2 historise les changements en créant une nouvelle ligne avec dates de validité (date\_debut, date\_fin, est\_actuel).
+
+\textbf{Avantages} : historique complet, analyses temporelles, traçabilité.
+
+\textbf{Exemple} : un bâtiment change de certification énergétique (D → C → B) : 3 lignes avec le même code\_batiment mais différentes périodes de validité.
+
+\section{Vues analytiques}
+
+Des vues SQL ont été créées pour faciliter les analyses courantes :
+
+\begin{itemize}
+    \item \textbf{v\_consommation\_region\_mois} : agrégation de la consommation par région, mois et type d'énergie
+    \item \textbf{v\_rentabilite\_client} : calcul du CA, marge et taux de recouvrement par client
+    \item \textbf{v\_environnement\_batiment} : synthèse des performances environnementales par bâtiment
+\end{itemize}
+
+\section{Conclusion}
+
+Ce chapitre a présenté l'architecture du Data Warehouse en constellation de faits, composée de trois Data Marts (Consommation, Rentabilité, Environnement) partageant six dimensions conformes. L'utilisation du SCD Type 2 assure l'historisation des changements.
+
+Le prochain chapitre détaille le processus ETL mis en place pour alimenter ce Data Warehouse.
+
+\cleardoublepage
+
+
+% ============================================================================
+% CHAPITRE 4
+% ============================================================================
+
+\chapter{Processus ETL}
+
+\section{Introduction}
+
+Ce chapitre présente le processus ETL (\textit{Extract, Transform, Load}) développé pour alimenter le Data Warehouse GreenCity. Nous décrivons les trois phases (Extraction, Transformation, Chargement), les transformations Pentaho, les scripts Python, ainsi que la gestion de la qualité des données et la traçabilité.
+
+\section{Architecture du processus ETL}
+
+\subsection{Vue d'ensemble}
+
+Le processus ETL suit une architecture en trois phases, intégrant une zone de staging pour isoler l'extraction des traitements et du chargement (Figure \ref{fig:flux_etl}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{job.jpeg}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/job/job.jpeg}\\[0.5cm]
+    Job Pentaho - Orchestration complète du processus ETL}}
+    \caption{Job Pentaho ETL - Orchestration complète avec enchaînement des transformations (Extraction → Transformation → Chargement)}
+    \label{fig:flux_etl}
+\end{figure}
+
+\subsection{Zones de données}
+
+\begin{itemize}
+    \item \textbf{Sources} : MySQL, JSON (36 fichiers), CSV (12 fichiers) ;
+    \item \textbf{Staging -- Extracted} : fichiers CSV extraits (données brutes extraites) ;
+    \item \textbf{Staging -- Transformed} : fichiers CSV transformés (nettoyés et enrichis) ;
+    \item \textbf{Data Warehouse} : 3 tables de faits et 6 dimensions.
+\end{itemize}
+
+\subsection{Technologies ETL}
+
+\begin{itemize}
+    \item \textbf{Pentaho Data Integration (PDI)} : transformations (\texttt{.ktr}) et job (\texttt{.kjb}) ;
+    \item \textbf{Python 3} : scripts d'automatisation et de consolidation ;
+    \item \textbf{MySQL} : stockage opérationnel (sources) et stockage analytique (DW).
+\end{itemize}
+
+\section{Phase 1 : Extraction}
+
+\subsection{Objectif}
+
+Récupérer les données depuis les sources opérationnelles et les déposer dans la zone de staging afin de garantir une séparation claire entre l'extraction et les traitements.
+
+\subsection{Extraction depuis MySQL}
+
+\subsubsection{Base de données opérationnelle}
+
+La Figure \ref{fig:mysql_operational_db} présente la structure de la base de données opérationnelle MySQL.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{mysql_tables.png}
+    \fbox{\parbox[c][4cm][c]{0.8\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : Bi-1.pdf (page 1)}\\[0.5cm]
+    phpMyAdmin - Tables MySQL opérationnelles}}
+    \caption{Base de données opérationnelle MySQL - Tables sources (battiment, client, compteur, facture, paiement, region)}
+    \label{fig:mysql_operational_db}
+\end{figure}
+
+\subsubsection{Tables extraites}
+
+\begin{itemize}
+    \item \texttt{dim\_regions} $\rightarrow$ \texttt{staging/extracted/regions.csv}
+    \item \texttt{dim\_clients} $\rightarrow$ \texttt{staging/extracted/clients.csv}
+    \item \texttt{dim\_batiments} $\rightarrow$ \texttt{staging/extracted/batiments.csv}
+    \item \texttt{dim\_compteurs} $\rightarrow$ \texttt{staging/extracted/compteurs.csv}
+    \item \texttt{fact\_factures} + \texttt{fact\_paiements} $\rightarrow$ \texttt{staging/extracted/factures.csv}
+\end{itemize}
+
+\subsubsection{Extraction incrémentale}
+
+L'extraction est \textbf{incrémentale} et s'appuie sur une colonne de suivi (ex. \texttt{date\_modification}) ainsi que sur une table de log d'extraction. Le Listing ci-dessous illustre le principe.
+
+\begin{lstlisting}[language=SQL, caption=Exemple d'extraction incrémentale MySQL]
+SELECT *
+FROM dim_clients
+WHERE date_modification > (
+    SELECT date_derniere_extraction
+    FROM log_extraction
+    WHERE nom_table = 'dim_clients'
+    ORDER BY date_derniere_extraction DESC
+    LIMIT 1
+);
+\end{lstlisting}
+
+\subsubsection{Transformation Pentaho : Extraction MySQL}
+
+La Figure \ref{fig:extraction_mysql} montre la transformation Pentaho utilisée pour extraire les données depuis MySQL.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{extraction_mysql.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/Screenshot 2026-01-07 at 15.30.48.png}\\[0.5cm]
+    Transformation Pentaho - Extraction MySQL}}
+    \caption{Transformation Pentaho - Extraction des données depuis MySQL (tables dimensions et factures)}
+    \label{fig:extraction_mysql}
+\end{figure}
+
+\textbf{Étapes principales} :
+\begin{enumerate}
+    \item \textbf{Table Input} : connexion MySQL et requête d'extraction ;
+    \item \textbf{Get System Info} : ajout du timestamp d'extraction ;
+    \item \textbf{Select Values} : sélection, renommage et typage des colonnes ;
+    \item \textbf{Text File Output} : écriture dans un fichier CSV ;
+    \item \textbf{Insert/Update} : mise à jour de la table \texttt{log\_extraction}.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{pentaho_logs.png}
+    \fbox{\parbox[c][4cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : Bi-1.pdf (page 2-3)}\\[0.5cm]
+    Logs d'exécution Pentaho - Extraction}}
+    \caption{Pentaho Spoon - Logs d'exécution de la transformation d'extraction MySQL avec statistiques (lignes lues, écrites, erreurs)}
+    \label{fig:pentaho_extraction_logs}
+\end{figure}
+
+\subsection{Extraction depuis fichiers JSON}
+
+\subsubsection{Fichiers traités}
+
+Les données de consommation sont fournies sous forme de 36 fichiers JSON (3 types $\times$ 12 mois) :
+
+\begin{itemize}
+    \item \texttt{Elec\_consumption\_01\_2024.json} \ldots \texttt{Elec\_consumption\_12\_2024.json}
+    \item \texttt{Eau\_consumption\_01\_2024.json} \ldots \texttt{Eau\_consumption\_12\_2024.json}
+    \item \texttt{Gaz\_consumption\_01\_2024.json} \ldots \texttt{Gaz\_consumption\_12\_2024.json}
+\end{itemize}
+
+\subsubsection{Parsing JSON (Python)}
+
+Le script suivant illustre le principe d'extraction JSON vers CSV. Il convertit le format imbriqué en un format tabulaire exploitable.
+
+\begin{lstlisting}[language=Python, caption=Extraction JSON vers CSV (principe)]
+import json
+import pandas as pd
+
+def extract_json_to_csv(json_file, output_csv):
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    rows = []
+    for batiment in data.get("batiments", []):
+        for mesure in batiment.get("mesures", []):
+            rows.append({
+                "id_region": data.get("id_region"),
+                "id_batiment": batiment.get("id_batiment"),
+                "compteur_id": mesure.get("compteur_id"),
+                "date_mesure": mesure.get("date_mesure"),
+                "consommation": (
+                    mesure.get("consommation_kWh")
+                    if mesure.get("consommation_kWh") is not None
+                    else mesure.get("consommation_m3")
+                ),
+                "unite": batiment.get("unite"),
+                "type_energie": batiment.get("type_energie"),
+                "temperature_celsius": mesure.get("temperature_celsius"),
+                "humidite_pourcent": mesure.get("humidite_pourcent"),
+            })
+
+    df = pd.DataFrame(rows)
+    df.to_csv(output_csv, index=False)
+    print(f"Extracted {len(df)} rows to {output_csv}")
+\end{lstlisting}
+
+\subsubsection{Transformation Pentaho : Extraction JSON}
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item \textbf{Get Files Names} : liste des fichiers JSON ;
+    \item \textbf{JSON Input} : parsing du JSON ;
+    \item \textbf{Split Fields} : extraction des champs imbriqués ;
+    \item \textbf{Text File Output} : écriture dans un CSV.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{extractioneau.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/extraction/extractioneau.PNG}\\[0.5cm]
+    Transformation Pentaho - Extraction JSON}}
+    \caption{Transformation Pentaho - Extraction des données de consommation depuis fichiers JSON (exemple : eau)}
+    \label{fig:extraction_json}
+\end{figure}
+
+\subsection{Extraction depuis fichiers CSV}
+
+\subsubsection{Fichiers traités}
+
+Les rapports environnementaux sont fournis sous forme de 12 fichiers mensuels :
+
+\begin{itemize}
+    \item \texttt{env\_reports\_01\_2024.csv} \ldots \texttt{env\_reports\_12\_2024.csv}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.85\textwidth]{staging_files.png}
+    \fbox{\parbox[c][4cm][c]{0.85\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/Screenshot 2026-01-07 at 15.29.30.png}\\[0.5cm]
+    Fichiers staging - Zone extracted}}
+    \caption{Zone de staging - Fichiers CSV extraits (regions, clients, batiments, compteurs, factures)}
+    \label{fig:staging_extracted}
+\end{figure}
+
+\subsubsection{Consolidation}
+
+Les 12 fichiers sont consolidés en un seul fichier :
+\texttt{staging/extracted/environnement.csv}.
+
+\begin{lstlisting}[language=Python, caption=Consolidation des CSV environnementaux]
+import pandas as pd
+from pathlib import Path
+
+def consolidate_env_reports(input_dir, output_file):
+    csv_files = sorted(Path(input_dir).glob("env_reports_*.csv"))
+
+    dfs = []
+    for csv_file in csv_files:
+        dfs.append(pd.read_csv(csv_file))
+
+    consolidated_df = pd.concat(dfs, ignore_index=True)
+    consolidated_df.to_csv(output_file, index=False)
+    print(f"Consolidated {len(consolidated_df)} rows from {len(csv_files)} files")
+\end{lstlisting}
+
+\section{Phase 2 : Transformation}
+
+\subsection{Objectif}
+
+Nettoyer, valider, enrichir et mettre en conformité les données extraites afin de produire des fichiers prêts pour le chargement dans le Data Warehouse.
+
+\subsection{Sous-phase 2.1 : Nettoyage}
+
+\subsubsection{Problèmes de qualité détectés}
+
+Le Tableau \ref{tab:problemes_qualite} synthétise les principaux problèmes et leurs solutions.
+
+\begin{table}[H]
+\centering
+\caption{Problèmes de qualité des données}
+\label{tab:problemes_qualite}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Problème} & \textbf{Exemple} & \textbf{Solution} \\
+\hline
+Doublons & Même facture en double & Déduplication par clés métier \\
+Valeurs manquantes & \texttt{email = NULL} & Valeur par défaut / exclusion \\
+Espaces inutiles & \texttt{" Ali  "} & \texttt{TRIM()} + normalisation \\
+Casse incohérente & \texttt{"TaNGER"}, \texttt{"tanger"} & \texttt{UPPER()/LOWER()} \\
+Dates invalides & \texttt{"32/13/2024"} & Validation + standardisation \\
+Valeurs aberrantes & \texttt{consommation = -50} & Exclusion / correction \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Transformation Pentaho : Nettoyage Clients}
+
+La Figure \ref{fig:nettoyage_clients} présente le flux de nettoyage des clients.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{nettoyageclient.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/nettoyae/nettoyageclient.PNG}\\[0.5cm]
+    Transformation Pentaho - Nettoyage Clients}}
+    \caption{Transformation Pentaho - Nettoyage des données clients (suppression doublons, trim, standardisation)}
+    \label{fig:nettoyage_clients}
+\end{figure}
+
+\textbf{Étapes de nettoyage} :
+\begin{enumerate}
+    \item \textbf{CSV File Input} : lecture du fichier extrait ;
+    \item \textbf{Unique Rows} : suppression des doublons ;
+    \item \textbf{Replace in String} : suppression des espaces multiples ;
+    \item \textbf{Trim Fields} : suppression des espaces avant/après ;
+    \item \textbf{Value Mapper} : normalisation de la casse ;
+    \item \textbf{Select Values} : conversion de types ;
+    \item \textbf{Filter Rows} : exclusion des valeurs invalides ;
+    \item \textbf{Text File Output} : génération du fichier nettoyé.
+\end{enumerate}
+
+\subsubsection{Script Python : nettoyage générique}
+
+\begin{lstlisting}[language=Python, caption=Fonction de nettoyage générique (principe)]
+import pandas as pd
+import numpy as np
+
+def clean_dataframe(df):
+    # Suppression des doublons
+    df = df.drop_duplicates()
+
+    # Nettoyage des champs texte
+    for col in df.select_dtypes(include=["object"]).columns:
+        df[col] = df[col].astype(str).str.strip()
+        df[col] = df[col].str.replace(r"\s+", " ", regex=True)
+
+    # Valeurs manquantes
+    df = df.replace("", np.nan)
+
+    # Standardisation des dates (si présentes)
+    date_columns = ["date_facture", "date_paiement", "date_mesure"]
+    for col in date_columns:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], errors="coerce")
+            df[col] = df[col].dt.strftime("%Y-%m-%d")
+
+    # Validation des valeurs numériques : négatifs -> NaN
+    for col in df.select_dtypes(include=["float64", "int64"]).columns:
+        df.loc[df[col] < 0, col] = np.nan
+
+    return df
+\end{lstlisting}
+
+\subsection{Sous-phase 2.2 : Enrichissement}
+
+\subsubsection{Objectif}
+
+Calculer des mesures dérivées, effectuer des jointures entre sources et produire des attributs calculés nécessaires aux KPI.
+
+\subsubsection{Transformation Pentaho : Enrichissement Factures}
+
+La Figure \ref{fig:enrichissement_factures} illustre l'enrichissement des factures.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{enrichisementfacture.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/enrich/enrichisementfacture.PNG}\\[0.5cm]
+    Transformation Pentaho - Enrichissement Factures}}
+    \caption{Transformation Pentaho - Enrichissement des factures (calcul marge, taux de marge, délais de paiement)}
+    \label{fig:enrichissement_factures}
+\end{figure}
+
+\textbf{Enrichissements réalisés} :
+\begin{enumerate}
+    \item \textbf{Marge} : \texttt{marge = montant\_ttc - cout\_energie} ;
+    \item \textbf{Taux de marge} : \texttt{taux\_marge = marge / montant\_ttc} ;
+    \item \textbf{Délai de paiement} : \texttt{DATEDIFF(date\_paiement, date\_facture)} ;
+    \item \textbf{Retard} : \texttt{DATEDIFF(date\_paiement, date\_echeance)} ;
+    \item \textbf{Indicateur est\_paye} : paiement non NULL ;
+    \item \textbf{Indicateur est\_en\_retard} : retard $>$ 0.
+\end{enumerate}
+
+\subsubsection{Script Python : enrichissement Consommation}
+
+\begin{lstlisting}[language=Python, caption=Enrichissement des données de consommation (principe)]
+def enrich_consommation(df, df_compteurs, df_batiments, df_types_energie):
+    # Jointure avec compteurs
+    df = df.merge(df_compteurs, left_on="compteur_id", right_on="id_compteur", how="left")
+
+    # Jointure avec bâtiments
+    df = df.merge(df_batiments, on="id_batiment", how="left")
+
+    # Jointure avec types d'énergie
+    df = df.merge(df_types_energie, on="id_type_energie", how="left")
+
+    # Normalisation en kWh équivalent (exemple de facteurs)
+    def normalize_to_kwh(row):
+        if row["unite"] == "kWh":
+            return row["consommation"]
+        if row["unite"] == "m3" and str(row["type_energie"]).lower() == "eau":
+            return row["consommation"] * 0.01
+        if row["unite"] == "m3" and str(row["type_energie"]).lower() == "gaz":
+            return row["consommation"] * 10.0
+        return row["consommation"]
+
+    df["consommation_normalisee"] = df.apply(normalize_to_kwh, axis=1)
+
+    # Consommation par m2
+    df["consommation_par_m2"] = df["consommation_normalisee"] / df["surface_m2"]
+
+    # Coûts (exemple)
+    df["cout_unitaire"] = df["type_energie"].map({
+        "Électricité": 1.25,
+        "Eau": 8.50,
+        "Gaz": 0.85
+    })
+    df["cout_total"] = df["consommation"] * df["cout_unitaire"]
+
+    return df
+\end{lstlisting}
+
+\subsection{Sous-phase 2.3 : Préparation des dimensions}
+
+\subsubsection{Objectif}
+
+Transformer les données sources en un format conforme aux dimensions du Data Warehouse, notamment en ajoutant les attributs et colonnes nécessaires au SCD Type 2.
+
+\subsubsection{Transformation Pentaho : préparation de \texttt{dim\_client}}
+
+La Figure \ref{fig:dimension_client} illustre la préparation de la dimension client.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{dimensionclient.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/dimensiondossier/dimensionclient.PNG}\\[0.5cm]
+    Transformation Pentaho - Préparation dim\_client}}
+    \caption{Transformation Pentaho - Préparation de la dimension client avec ajout des attributs SCD Type 2}
+    \label{fig:dimension_client}
+\end{figure}
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item lecture du fichier \texttt{clients\_cleaned.csv} ;
+    \item génération de l'attribut \texttt{segment\_client} selon les règles métier ;
+    \item ajout des colonnes SCD Type 2 : \texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actuel} ;
+    \item génération d'un \texttt{code\_client} unique (clé métier) ;
+    \item écriture dans \texttt{dim\_client\_prepared.csv}.
+\end{enumerate}
+
+\subsubsection{Dimensions préparées}
+
+\begin{itemize}
+    \item \texttt{dim\_region\_prepared.csv}
+    \item \texttt{dim\_batiment\_prepared.csv}
+    \item \texttt{dim\_client\_prepared.csv}
+    \item \texttt{dim\_compteur\_prepared.csv}
+    \item \texttt{dim\_type\_energie\_prepared.csv} (statique)
+\end{itemize}
+
+\subsection{Sous-phase 2.4 : Préparation des faits}
+
+\subsubsection{Transformation Pentaho : préparation de \texttt{fact\_consommation}}
+
+La Figure \ref{fig:fact_consommation} montre la préparation de la table de faits consommation.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{factconsommation.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/fact/factconsommation.PNG}\\[0.5cm]
+    Transformation Pentaho - Préparation fact\_consommation}}
+    \caption{Transformation Pentaho - Préparation de la table de faits consommation (lookups, calculs, agrégations)}
+    \label{fig:fact_consommation}
+\end{figure}
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item lecture des fichiers enrichis (électricité, eau, gaz) ;
+    \item extraction de l'heure à partir de \texttt{date\_mesure} ;
+    \item calcul de \texttt{id\_date} au format \texttt{YYYYMMDD} ;
+    \item \textit{lookup} des clés étrangères (\texttt{id\_batiment}, \texttt{id\_region}, \texttt{id\_client}, etc.) ;
+    \item sélection des colonnes finales ;
+    \item écriture dans \texttt{fact\_consommation\_prepared.csv}.
+\end{enumerate}
+
+\subsubsection{Transformation Pentaho : préparation de \texttt{fact\_environnement}}
+
+La Figure \ref{fig:fact_environnement} illustre la préparation du fait environnemental.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{factenvir.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/fact/factenvir.PNG}\\[0.5cm]
+    Transformation Pentaho - Préparation fact\_environnement}}
+    \caption{Transformation Pentaho - Préparation de la table de faits environnement (calcul ratios CO\textsubscript{2}, conformité)}
+    \label{fig:fact_environnement}
+\end{figure}
+
+\textbf{Enrichissements spécifiques} :
+\begin{itemize}
+    \item calcul du \texttt{ratio\_co2\_consommation} ;
+    \item calcul de \texttt{emission\_co2\_par\_m2} ;
+    \item comparaison avec le mois précédent ;
+    \item calcul de \texttt{variation\_emission\_pourcent} ;
+    \item détermination du \texttt{niveau\_performance} (Excellent, Bon, Moyen, Faible) ;
+    \item évaluation de la \texttt{conformité aux normes}.
+\end{itemize}
+
+\section{Phase 3 : Chargement}
+
+\subsection{Objectif}
+
+Charger les données transformées dans le Data Warehouse en respectant l'intégrité référentielle, l'historisation (SCD) et la traçabilité.
+
+\subsection{Chargement des dimensions}
+
+\subsubsection{Stratégie : SCD Type 2}
+
+Les dimensions utilisent le SCD Type 2 afin d'historiser les changements. Le Listing ci-dessous illustre le principe général (exemple pédagogique).
+
+\begin{lstlisting}[language=Python, caption=Principe de chargement SCD Type 2 (exemple)]
+def load_dimension_scd_type2(cursor, table_name, new_records):
+    for record in new_records:
+        business_key = record["code"]
+
+        cursor.execute(f"""
+            SELECT * FROM {table_name}
+            WHERE code = %s AND est_actuel = TRUE
+        """, (business_key,))
+
+        existing = cursor.fetchone()
+
+        if existing is None:
+            cursor.execute(f"INSERT INTO {table_name} (...) VALUES (...)", tuple(record.values()))
+        else:
+            if has_changed(existing, record):
+                cursor.execute(f"""
+                    UPDATE {table_name}
+                    SET date_fin = CURDATE(), est_actuel = FALSE
+                    WHERE id = %s
+                """, (existing["id"],))
+
+                cursor.execute(f"INSERT INTO {table_name} (...) VALUES (...)", tuple(record.values()))
+\end{lstlisting}
+
+\subsubsection{Transformation Pentaho : chargement des dimensions}
+
+La Figure \ref{fig:chargement_dimensions} présente le chargement des dimensions.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{chargementdimension.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/chargement/chargementdimension.PNG}\\[0.5cm]
+    Transformation Pentaho - Chargement Dimensions}}
+    \caption{Transformation Pentaho - Chargement des dimensions dans le DW avec gestion SCD Type 2}
+    \label{fig:chargement_dimensions}
+\end{figure}
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item \textbf{CSV File Input} : lecture des dimensions préparées ;
+    \item \textbf{Dimension Lookup/Update} : gestion SCD Type 2 ;
+    \item \textbf{Database Connection} : connexion au Data Warehouse ;
+    \item \textbf{Insert/Update} : chargement dans MySQL.
+\end{enumerate}
+
+\subsection{Chargement des faits}
+
+\subsubsection{Stratégie : chargement incrémental}
+
+Les faits sont chargés de manière incrémentale. Le Listing ci-dessous illustre le principe de filtrage par dernière date de chargement (exemple pédagogique).
+
+\begin{lstlisting}[language=Python, caption=Principe de chargement incrémental des faits (exemple)]
+import pandas as pd
+
+def load_fact_incremental(cursor, fact_table, prepared_csv):
+    df = pd.read_csv(prepared_csv)
+
+    cursor.execute(f"SELECT MAX(date_ajout) AS last_load FROM {fact_table}")
+    last_load = cursor.fetchone()["last_load"]
+
+    if last_load is not None and "date_mesure" in df.columns:
+        df = df[df["date_mesure"] > str(last_load)]
+
+    if len(df) > 0:
+        values = [tuple(row) for row in df.values]
+        cursor.executemany(f"INSERT INTO {fact_table} (...) VALUES (...)", values)
+        print(f"Loaded {len(df)} new records into {fact_table}")
+\end{lstlisting}
+
+\subsubsection{Transformation Pentaho : chargement des faits}
+
+La Figure \ref{fig:chargement_faits} présente le chargement des faits.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{charementfait.png}
+    \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering
+    \textbf{IMAGE À INSÉRER : screens/chargement/charementfait.PNG}\\[0.5cm]
+    Transformation Pentaho - Chargement Faits}}
+    \caption{Transformation Pentaho - Chargement des tables de faits dans le DW (insertion incrémentale)}
+    \label{fig:chargement_faits}
+\end{figure}
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item \textbf{CSV File Input} : lecture des faits préparés ;
+    \item \textbf{Table Output} : insertion dans les tables de faits ;
+    \item \textbf{Write to Log} : enregistrement des statistiques.
+\end{enumerate}
+
+\subsection{Gestion des contraintes d'intégrité}
+
+\subsubsection{Ordre de chargement}
+
+Pour garantir l'intégrité référentielle, le chargement est effectué dans l'ordre suivant :
+
+\begin{enumerate}
+    \item \texttt{dim\_date} (pré-peuplée)
+    \item \texttt{dim\_type\_energie} (statique)
+    \item \texttt{dim\_region}
+    \item \texttt{dim\_batiment}
+    \item \texttt{dim\_client}
+    \item \texttt{dim\_compteur}
+    \item \texttt{fact\_consommation}
+    \item \texttt{fact\_rentabilite}
+    \item \texttt{fact\_environnement}
+\end{enumerate}
+
+\subsubsection{Gestion des clés étrangères}
+
+Les clés étrangères sont résolues par des \textit{lookups} (sur les dimensions) avant l'insertion en table de faits.
+
+\begin{lstlisting}[language=Python, caption=Résolution des clés étrangères (principe)]
+def lookup_dimension_key(cursor, table, business_key_column, business_key_value):
+    cursor.execute(f"""
+        SELECT id FROM {table}
+        WHERE {business_key_column} = %s AND est_actuel = TRUE
+    """, (business_key_value,))
+    result = cursor.fetchone()
+    return result["id"] if result else None
+\end{lstlisting}
+
+\section{Monitoring et gestion des erreurs}
+
+\subsection{Tables de log}
+
+\subsubsection{Table \texttt{etl\_log}}
+
+Cette table enregistre les exécutions ETL.
+
+\begin{lstlisting}[language=SQL, caption=Exemple d'insertion dans etl\_log]
+INSERT INTO etl_log (
+    nom_job,
+    nom_transformation,
+    date_debut,
+    date_fin,
+    duree_secondes,
+    statut,
+    nombre_lignes_lues,
+    nombre_lignes_ecrites,
+    nombre_lignes_rejetees,
+    message_erreur
+) VALUES (
+    'ETL_Daily',
+    'extraction_mysql',
+    '2024-01-15 02:00:00',
+    '2024-01-15 02:05:30',
+    330,
+    'Succes',
+    5000,
+    4998,
+    2,
+    NULL
+);
+\end{lstlisting}
+
+\subsubsection{Table \texttt{etl\_qualite}}
+
+Cette table enregistre les contrôles de qualité.
+
+\begin{lstlisting}[language=SQL, caption=Exemple d'insertion dans etl\_qualite]
+INSERT INTO etl_qualite (
+    id_log,
+    nom_table,
+    type_controle,
+    nombre_anomalies,
+    description
+) VALUES (
+    123,
+    'clients',
+    'Valeurs manquantes',
+    12,
+    '12 enregistrements avec email manquant'
+);
+\end{lstlisting}
+
+\subsection{Gestion des erreurs}
+
+\subsubsection{Stratégie de \textit{retry}}
+
+En cas d'erreur, le processus effectue jusqu'à 3 tentatives, avec un délai croissant entre les tentatives.
+
+\begin{lstlisting}[language=Python, caption=Stratégie de retry (exemple)]
+import time
+
+def execute_with_retry(func, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            return func()
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(60 * (attempt + 1))
+            else:
+                raise
+\end{lstlisting}
+
+\subsection{Fichier de log}
+
+Un fichier de log détaillé est généré à chaque exécution.
+
+\begin{lstlisting}[caption=Exemple de log ETL]
+[2024-01-15 02:00:00] INFO - ETL process started
+[2024-01-15 02:00:05] INFO - Extraction phase started
+[2024-01-15 02:02:30] INFO - Extracted 5000 rows from MySQL
+[2024-01-15 02:03:15] INFO - Extracted 16000 measures from JSON files
+[2024-01-15 02:03:45] INFO - Extraction phase completed (3m 45s)
+[2024-01-15 02:03:46] INFO - Transformation phase started
+[2024-01-15 02:05:20] WARNING - 12 records with missing email in clients
+[2024-01-15 02:08:10] INFO - Transformation phase completed (4m 24s)
+[2024-01-15 02:08:11] INFO - Loading phase started
+[2024-01-15 02:12:05] INFO - Loaded 773 rows into dimensions
+[2024-01-15 02:25:30] INFO - Loaded 22104 rows into facts
+[2024-01-15 02:25:31] INFO - Loading phase completed (17m 20s)
+[2024-01-15 02:25:31] INFO - ETL process completed successfully (25m 31s)
+\end{lstlisting}
+
+\section{Statistiques de réalisation}
+
+\subsection{Volumétrie traitée}
+
+Le Tableau \ref{tab:volumetrie_etl} présente les volumes traités.
+
+\begin{table}[H]
+\centering
+\caption{Volumétrie traitée par l'ETL}
+\label{tab:volumetrie_etl}
+\begin{tabular}{|l|r|r|}
+\hline
+\textbf{Élément} & \textbf{Nombre} & \textbf{Taille} \\
+\hline
+\multicolumn{3}{|c|}{\textbf{Fichiers sources}} \\
+\hline
+Fichiers JSON & 36 & 45 MB \\
+Fichiers CSV & 12 & 2 MB \\
+Tables MySQL & 9 & 8 MB \\
+\hline
+\multicolumn{3}{|c|}{\textbf{Staging}} \\
+\hline
+Fichiers extraits & 9 & 2.5 MB \\
+Fichiers transformés & 22 & 3.5 MB \\
+\hline
+\multicolumn{3}{|c|}{\textbf{Data Warehouse}} \\
+\hline
+Dimensions & 773 lignes & 150 KB \\
+Faits & 22~104 lignes & 5.2 MB \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Performance}
+
+\begin{itemize}
+    \item \textbf{Durée totale ETL} : 25 minutes 31 secondes ;
+    \item \textbf{Phase Extraction} : 3 minutes 45 secondes ;
+    \item \textbf{Phase Transformation} : 4 minutes 24 secondes ;
+    \item \textbf{Phase Chargement} : 17 minutes 20 secondes ;
+    \item \textbf{Taux de succès} : 99{,}91\% (2 enregistrements rejetés sur 22~106).
+\end{itemize}
+
+\section{Conclusion}
+
+Ce chapitre a présenté le processus ETL complet développé pour alimenter le Data Warehouse GreenCity. Les trois phases (Extraction, Transformation, Chargement) ont été implémentées avec Pentaho PDI et Python, garantissant la qualité, la traçabilité et des performances conformes aux exigences.
+
+Le prochain chapitre présente l'automatisation et l'orchestration de ce processus ETL avec Apache Airflow.
+
+\cleardoublepage
+
+
+\chapter{Automatisation et Reporting}
+
+\section{Introduction}
+
+Ce chapitre présente les mécanismes d’automatisation du processus ETL ainsi que la couche de reporting décisionnel mise en place pour le projet GreenCity.  
+Il décrit l’orchestration des traitements ETL à l’aide de scripts Python, la planification automatique via les outils système, et les tableaux de bord interactifs développés avec Power BI pour répondre aux besoins analytiques et stratégiques des décideurs.
+
+% ============================================================================
+% PARTIE 1 : AUTOMATISATION
+% ============================================================================
+
+\section{Automatisation du processus ETL}
+
+\subsection{Besoins d’automatisation}
+
+\subsubsection{Exigences fonctionnelles}
+
+Le processus ETL doit répondre aux exigences suivantes :
+
+\begin{itemize}
+    \item \textbf{Exécution automatique} : L’ETL doit s’exécuter sans intervention humaine.
+    \item \textbf{Planification} : L’exécution est programmée quotidiennement à 02h00 du matin.
+    \item \textbf{Gestion des dépendances} : Respect strict de l’ordre des phases (Extraction → Transformation → Chargement).
+    \item \textbf{Traçabilité} : Journalisation complète des exécutions via les tables \texttt{etl\_log} et \texttt{etl\_qualite}.
+    \item \textbf{Gestion des erreurs} : Arrêt du processus en cas d’erreur critique avec conservation des informations de diagnostic.
+\end{itemize}
+
+\subsection{Script orchestrateur Python}
+
+L’orchestration globale du processus ETL est assurée par un script Python centralisé qui coordonne l’exécution séquentielle de toutes les phases et sous-tâches.
+
+\begin{lstlisting}[language=Python, caption=Script orchestrateur ETL (main\_etl\_orchestrator.py)]
+#!/usr/bin/env python3
+"""
+Orchestrateur ETL GreenCity
+Execution complete du processus ETL dans l'ordre logique
+"""
+import sys
+import logging
+from datetime import datetime
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(f'logs/etl_{datetime.now().strftime("%Y%m%d")}.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+def main():
+    start_time = datetime.now()
+    logging.info("============================================================")
+    logging.info("ETL GreenCity - Demarrage du processus")
+    logging.info("============================================================")
+
+    try:
+        logging.info("PHASE 1 : EXTRACTION")
+        from extract_regions_mysql import extract_regions
+        extract_regions()
+
+        from convert_json_elec_to_csv import convert_json_to_csv as extract_elec
+        from convert_json_eau_to_csv import convert_json_to_csv as extract_eau
+        from convert_json_gaz_to_csv import convert_json_to_csv as extract_gaz
+        extract_elec()
+        extract_eau()
+        extract_gaz()
+
+        from convert_csv_environnement_to_extracted import extract_env_reports
+        extract_env_reports()
+
+        logging.info("PHASE 2 : TRANSFORMATION")
+        from transformation_regions import transform_regions
+        from transformation_clients import transform_clients
+        from transformation_batiments import transform_batiments
+        transform_regions()
+        transform_clients()
+        transform_batiments()
+
+        from transformation_consommation import transform_consommation
+        from transformation_factures import transform_factures
+        from transformation_environnement import transform_environnement
+        transform_consommation()
+        transform_factures()
+        transform_environnement()
+
+        logging.info("PHASE 3 : CHARGEMENT")
+        from chargement_dimensions import load_all_dimensions
+        load_all_dimensions()
+
+        from chargement_fait_consommation import load_fact_consommation
+        from chargement_fait_rentabilite import load_fact_rentabilite
+        from chargement_fait_environnement import load_fact_environnement
+        load_fact_consommation()
+        load_fact_rentabilite()
+        load_fact_environnement()
+
+        duration = (datetime.now() - start_time).total_seconds()
+        logging.info(f"ETL termine avec succes en {duration:.2f} secondes")
+
+        return 0
+
+    except Exception as e:
+        logging.error("Erreur critique lors de l'execution de l'ETL", exc_info=True)
+        return 1
+
+if __name__ == "__main__":
+    sys.exit(main())
+\end{lstlisting}
+
+\subsection{Planification des exécutions}
+
+\subsubsection{Planification avec Cron (Linux / macOS)}
+
+L’outil Cron est utilisé pour programmer l’exécution quotidienne de l’ETL.
+
+\begin{lstlisting}[caption=Entrée crontab pour ETL quotidien]
+0 2 * * * cd /Users/mohammedbelouarraq/Desktop/BI && \
+/Users/mohammedbelouarraq/Desktop/BI/venv/bin/python \
+/Users/mohammedbelouarraq/Desktop/BI/03_etl/scripts/main_etl_orchestrator.py \
+>> /Users/mohammedbelouarraq/Desktop/BI/logs/etl_cron.log 2>&1
+\end{lstlisting}
+
+\subsubsection{Planification sous Windows}
+
+Sous Windows, le planificateur de tâches (\textit{Task Scheduler}) est utilisé à l’aide d’un script batch.
+
+\begin{lstlisting}[language=bash, caption=Script batch Windows (run\_etl.bat)]
+@echo off
+set PYTHON_EXE=C:\Users\GreenCity\Desktop\BI\venv\Scripts\python.exe
+set ETL_SCRIPT=C:\Users\GreenCity\Desktop\BI\03_etl\scripts\main_etl_orchestrator.py
+set LOG_FILE=C:\Users\GreenCity\Desktop\BI\logs\etl.log
+
+%PYTHON_EXE% %ETL_SCRIPT% >> %LOG_FILE% 2>&1
+\end{lstlisting}
+
+\subsection{Monitoring et gestion des logs}
+
+\subsubsection{Fichiers et tables de suivi}
+
+Chaque exécution produit :
+\begin{itemize}
+    \item Un fichier de log détaillé horodaté.
+    \item Une insertion dans la table \texttt{etl\_log}.
+    \item Des enregistrements qualité dans \texttt{etl\_qualite}.
+\end{itemize}
+
+\section{Reporting et Visualisation avec Power BI}
+
+\subsection{Architecture du reporting}
+
+\subsubsection{Choix de l’outil}
+
+Microsoft Power BI a été retenu pour les raisons suivantes :
+
+\begin{itemize}
+    \item Connexion native à MySQL
+    \item Capacités avancées de visualisation
+    \item Support du langage DAX
+    \item Interactivité élevée (filtres, drill-down, drill-through)
+    \item Publication et partage via Power BI Service
+\end{itemize}
+
+\subsubsection{Modèle de données Power BI}
+
+Le modèle Power BI repose sur le schéma en constellation du Data Warehouse, avec trois tables de faits et six dimensions conformes.
+
+\subsubsection{Mesures DAX}
+
+\begin{lstlisting}[caption=Exemples de mesures DAX]
+// Consommation totale normalisee
+Consommation_Totale = SUM(fact_consommation[consommation_normalisee])
+
+// Chiffre d'affaires
+CA_Total = SUM(fact_rentabilite[montant_ttc])
+
+// Taux de marge
+Taux_Marge =
+DIVIDE(
+    SUM(fact_rentabilite[marge]),
+    SUM(fact_rentabilite[montant_ttc]),
+    0
+) * 100
+\end{lstlisting}
+
+\section{Tableaux de bord décisionnels}
+
+Quatre dashboards ont été conçus pour couvrir l’ensemble des besoins analytiques :
+
+\begin{itemize}
+    \item \textbf{Vue d’ensemble (Executive Summary)}
+    \item \textbf{Consommation énergétique}
+    \item \textbf{Rentabilité économique}
+    \item \textbf{Impact environnemental}
+\end{itemize}
+
+Chaque dashboard intègre des KPI, des visualisations interactives, des filtres dynamiques et des mécanismes de navigation avancés.
+
+\section{Conclusion}
+
+Ce chapitre a présenté l’automatisation complète du processus ETL ainsi que la couche de reporting décisionnel du projet GreenCity.  
+L’intégration des scripts Python, de la planification système et de Power BI permet :
+
+\begin{itemize}
+    \item Une exécution quotidienne fiable et autonome
+    \item Une traçabilité complète des traitements
+    \item Une exploitation efficace des données pour la prise de décision
+\end{itemize}
+
+Le chapitre suivant conclut ce rapport et présente les perspectives d’évolution du système.
+
+
+\chapter{Conclusion Générale}
+
+\section{Synthèse du projet}
+
+Ce projet de Business Intelligence réalisé pour GreenCity avait pour objectif de concevoir et de mettre en œuvre un système décisionnel complet permettant l’analyse de la consommation énergétique, de la rentabilité économique et de l’impact environnemental des bâtiments intelligents.
+
+Au terme de ce travail, nous avons livré une solution opérationnelle conforme aux besoins exprimés dans le cahier des charges, reposant sur un Data Warehouse dimensionnel, un processus ETL automatisé et une couche de reporting interactive.
+
+\subsection{Réalisations principales}
+
+\subsubsection{Conception d’un Data Warehouse dimensionnel}
+
+Nous avons conçu un Data Warehouse organisé en trois Data Marts thématiques selon l’approche dimensionnelle de Kimball :
+
+\begin{itemize}
+    \item \textbf{Data Mart Consommation Énergétique} : analyse détaillée de la consommation (électricité, eau, gaz) par compteur, bâtiment, région et période.
+    \item \textbf{Data Mart Rentabilité Économique} : suivi du chiffre d’affaires, des marges, du recouvrement et des délais de paiement.
+    \item \textbf{Data Mart Impact Environnemental} : mesure des émissions de CO\textsubscript{2}, du taux de recyclage et des indicateurs de conformité.
+\end{itemize}
+
+Le choix d’un modèle en étoile facilite l’exploitation analytique et améliore les performances des requêtes. Les dimensions conformes (\textit{date, région, bâtiment, client, compteur, type d’énergie}) garantissent la cohérence sémantique entre les Data Marts et permettent des analyses transversales.
+
+\subsubsection{Mise en place d’un processus ETL automatisé}
+
+Le processus ETL développé assure l’intégration de données issues de sources hétérogènes (MySQL, fichiers JSON, fichiers CSV), puis leur transformation (nettoyage, validation, enrichissement) et leur chargement dans le Data Warehouse.
+
+Deux approches complémentaires ont été mobilisées :
+\begin{itemize}
+    \item \textbf{Pentaho Data Integration} : prise en charge des transformations visuelles, des enchaînements de traitements et de certains contrôles qualité.
+    \item \textbf{Scripts Python} : automatisation, consolidation des fichiers, opérations spécifiques (aplanissement JSON, enrichissements) et orchestration globale.
+\end{itemize}
+
+Enfin, le processus a été planifié pour s’exécuter quotidiennement, garantissant une mise à jour régulière des tables analytiques et des indicateurs décisionnels.
+
+\subsubsection{Développement de dashboards interactifs}
+
+Une couche de visualisation a été développée avec Power BI à travers quatre tableaux de bord :
+
+\begin{itemize}
+    \item Dashboard \textbf{Vue d’ensemble (Executive Summary)}
+    \item Dashboard \textbf{Consommation Énergétique}
+    \item Dashboard \textbf{Rentabilité Économique}
+    \item Dashboard \textbf{Impact Environnemental}
+\end{itemize}
+
+Ces dashboards offrent une interface de pilotage intuitive, permettant aux décideurs d’explorer les données, de suivre les KPI, d’identifier les tendances et de soutenir la prise de décision à différents niveaux de granularité (drill-down, filtres, analyses comparatives).
+
+\section{Bénéfices pour GreenCity}
+
+La mise en place de ce système décisionnel apporte plusieurs bénéfices concrets :
+
+\begin{itemize}
+    \item \textbf{Vision unifiée} : centralisation de données auparavant dispersées et difficiles à exploiter de manière transversale.
+    \item \textbf{Fiabilité accrue} : amélioration de la qualité grâce au nettoyage, à la standardisation et à la validation des données.
+    \item \textbf{Réactivité} : mise à jour automatique quotidienne des indicateurs de performance.
+    \item \textbf{Aide à la décision} : visualisations interactives facilitant l’interprétation et l’analyse.
+    \item \textbf{Optimisation} : identification des leviers d’amélioration en matière de consommation, de rentabilité et d’impact environnemental.
+\end{itemize}
+
+\section{Compétences acquises}
+
+Ce projet a permis de consolider des compétences techniques et méthodologiques essentielles dans le domaine de la BI.
+
+\subsection{Compétences techniques}
+
+\begin{itemize}
+    \item \textbf{Modélisation dimensionnelle} : conception de schémas en étoile, définition du grain, gestion des dimensions conformes.
+    \item \textbf{ETL} : extraction multi-sources, transformations de qualité, enrichissements et chargements incrémentaux.
+    \item \textbf{Pentaho PDI} : réalisation de transformations et de jobs, gestion de flux et composants de contrôle.
+    \item \textbf{Python} : scripts de parsing, nettoyage, consolidation, automatisation et orchestration.
+    \item \textbf{MySQL} : structuration, alimentation et exploitation d’un Data Warehouse.
+    \item \textbf{Power BI} : modélisation, création de mesures DAX et conception de dashboards interactifs.
+    \item \textbf{Automatisation} : planification des exécutions via Cron et Task Scheduler.
+\end{itemize}
+
+\subsection{Compétences méthodologiques}
+
+\begin{itemize}
+    \item \textbf{Analyse des besoins} : formalisation des questions métier et définition de KPI.
+    \item \textbf{Gestion de projet} : organisation des phases, respect du planning et priorisation.
+    \item \textbf{Résolution de problèmes} : débogage, correction des incohérences, optimisation des traitements.
+    \item \textbf{Documentation} : rédaction d’un rapport structuré et explicatif, orienté conception et mise en œuvre.
+    \item \textbf{Qualité des données} : mise en place de règles de contrôle, traçabilité et logs.
+\end{itemize}
+
+
+
+\section{Conclusion finale}
+
+Ce projet de Business Intelligence a permis de mettre en pratique l’ensemble des concepts étudiés, de l’analyse des besoins à la livraison d’une solution décisionnelle complète. La démarche adoptée a couvert toutes les étapes d’un projet BI : collecte des données, intégration, transformation, modélisation dimensionnelle, historisation, automatisation et visualisation.
+
+Le système développé pour GreenCity est opérationnel et répond aux objectifs fixés. Il offre une vision consolidée et cohérente des informations liées à la consommation énergétique, à la rentabilité et à l’impact environnemental. Les décideurs disposent désormais d’un outil de pilotage fiable, permettant une prise de décision fondée sur des indicateurs pertinents et des données contrôlées.
+
+Au-delà de l’aspect technique, ce travail illustre l’importance stratégique de la Business Intelligence dans la transformation numérique des organisations. Dans un contexte où les données constituent un actif majeur, la capacité à les valoriser efficacement représente un levier décisif de compétitivité.
+
+Cette expérience a été à la fois enrichissante et formatrice. Elle nous a permis d’acquérir une vision globale des systèmes décisionnels et de renforcer des compétences directement mobilisables dans notre future carrière professionnelle dans les métiers de la Data et de la Business Intelligence.
+
+\vspace{2cm}
+
+
+\cleardoublepage
+
+% ============================================================================
+% BIBLIOGRAPHIE
+% ============================================================================
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+\bibitem{kimball2013} 
+Ralph Kimball and Margy Ross. 
+\textit{The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling}. 
+John Wiley \& Sons, 3rd Edition, 2013.
+
+\bibitem{inmon2005} 
+William H. Inmon. 
+\textit{Building the Data Warehouse}. 
+John Wiley \& Sons, 4th Edition, 2005.
+
+\bibitem{pentaho} 
+Pentaho Documentation. 
+\textit{Pentaho Data Integration Documentation}. 
+\url{https://help.pentaho.com/}, 2024.
+
+\bibitem{airflow} 
+Apache Airflow. 
+\textit{Apache Airflow Documentation}. 
+\url{https://airflow.apache.org/docs/}, 2024.
+
+\bibitem{mysql} 
+MySQL Documentation. 
+\textit{MySQL 8.0 Reference Manual}. 
+\url{https://dev.mysql.com/doc/}, 2024.
+
+\bibitem{powerbi} 
+Microsoft. 
+\textit{Power BI Documentation}. 
+\url{https://docs.microsoft.com/power-bi/}, 2024.
+
+\bibitem{python} 
+Python Software Foundation. 
+\textit{Python Documentation}. 
+\url{https://docs.python.org/3/}, 2024.
+
+\bibitem{kimball_group} 
+The Kimball Group. 
+\textit{Dimensional Modeling Techniques}. 
+\url{https://www.kimballgroup.com/}, 2024.
+
+\bibitem{olap} 
+E.F. Codd, S.B. Codd, and C.T. Salley. 
+\textit{Providing OLAP to User-Analysts: An IT Mandate}. 
+Technical Report, 1993.
+
+\bibitem{etl_best_practices} 
+Ralph Kimball and Joe Caserta. 
+\textit{The Data Warehouse ETL Toolkit}. 
+John Wiley \& Sons, 2004.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,11 @@
+﻿id_region,code_region,nom_region,pays,zone_climatique,population,superficie_km2,date_debut,date_fin,est_actuel,date_ajout,date_maj
+1,REG01,Casablanca,Maroc,Méditerranéen,309805,7441.35,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+2,REG02,Rabat,Maroc,Continental,1972427,1481.43,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+3,REG03,Fès,Maroc,Méditerranéen,4674866,960.69,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+4,REG04,Marrakech,Maroc,Océanique,366612,394.99,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+5,REG05,Agadir,Maroc,Continental,2051701,5103.02,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+6,REG06,Tanger,Maroc,Méditerranéen,4808064,2068.49,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+7,REG07,Meknès,Maroc,Océanique,1949189,4547.17,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+8,REG08,Oujda,Maroc,Saharien,154515,7612.19,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+9,REG09,Kenitra,Maroc,Continental,3645146,3468.48,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45
+10,REG10,Tétouan,Maroc,Continental,1906182,9576.41,2026-01-04,,1,2026-01-06 11:24:45,2026-01-06 11:24:45

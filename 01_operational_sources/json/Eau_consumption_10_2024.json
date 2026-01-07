@@ -1,0 +1,844 @@
+{
+  "id_region": "REG03",
+  "batiments": [
+    {
+      "id_batiment": "BAT016",
+      "type_energie": "eau",
+      "unite": "m3",
+      "date_generation": "2024-10-15",
+      "mesures": [
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T08:00:00",
+          "consommation_m3": 4.52
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T09:00:00",
+          "consommation_m3": 8.06
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T10:00:00",
+          "consommation_m3": 2.09
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T11:00:00",
+          "consommation_m3": 6.57
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T12:00:00",
+          "consommation_m3": 9.1
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T13:00:00",
+          "consommation_m3": 2.59
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-01T14:00:00",
+          "consommation_m3": 9.63
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T08:00:00",
+          "consommation_m3": 5.69
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T09:00:00",
+          "consommation_m3": 3.55
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T10:00:00",
+          "consommation_m3": 4.54
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T11:00:00",
+          "consommation_m3": 4.48
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T12:00:00",
+          "consommation_m3": 3.98
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-01T13:00:00",
+          "consommation_m3": 7.0
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T08:00:00",
+          "consommation_m3": 5.7
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T09:00:00",
+          "consommation_m3": 4.04
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T10:00:00",
+          "consommation_m3": 4.13
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T11:00:00",
+          "consommation_m3": 2.2
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T12:00:00",
+          "consommation_m3": 9.58
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-02T13:00:00",
+          "consommation_m3": 6.21
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-02T08:00:00",
+          "consommation_m3": 6.21
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-02T09:00:00",
+          "consommation_m3": 3.62
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-02T10:00:00",
+          "consommation_m3": 2.18
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-02T11:00:00",
+          "consommation_m3": 7.5
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-02T12:00:00",
+          "consommation_m3": 4.88
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T08:00:00",
+          "consommation_m3": 5.09
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T10:00:00",
+          "consommation_m3": 2.06
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T11:00:00",
+          "consommation_m3": 4.53
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T12:00:00",
+          "consommation_m3": 3.0
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-03T13:00:00",
+          "consommation_m3": 2.75
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-03T08:00:00",
+          "consommation_m3": 9.43
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-03T09:00:00",
+          "consommation_m3": 4.16
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-03T10:00:00",
+          "consommation_m3": 8.01
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T08:00:00",
+          "consommation_m3": 4.29
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T09:00:00",
+          "consommation_m3": 7.05
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T10:00:00",
+          "consommation_m3": 0.5
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T11:00:00",
+          "consommation_m3": 1.78
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T12:00:00",
+          "consommation_m3": 9.01
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T13:00:00",
+          "consommation_m3": 8.7
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T14:00:00",
+          "consommation_m3": 2.43
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-04T15:00:00",
+          "consommation_m3": 0.79
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-04T08:00:00",
+          "consommation_m3": 9.13
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-04T09:00:00",
+          "consommation_m3": 2.06
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-04T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-04T11:00:00",
+          "consommation_m3": 4.78
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-04T12:00:00",
+          "consommation_m3": 4.22
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T08:00:00",
+          "consommation_m3": 9.76
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T09:00:00",
+          "consommation_m3": 9.14
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T10:00:00",
+          "consommation_m3": 9.89
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T11:00:00",
+          "consommation_m3": 3.28
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T12:00:00",
+          "consommation_m3": 8.57
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T13:00:00",
+          "consommation_m3": 9.92
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T14:00:00",
+          "consommation_m3": 5.2
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-05T15:00:00",
+          "consommation_m3": 1.46
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-05T08:00:00",
+          "consommation_m3": 4.52
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-05T09:00:00",
+          "consommation_m3": 7.36
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-05T10:00:00",
+          "consommation_m3": 4.54
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-05T11:00:00",
+          "consommation_m3": 9.73
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-06T08:00:00",
+          "consommation_m3": 2.22
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-06T09:00:00",
+          "consommation_m3": 3.39
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-06T10:00:00",
+          "consommation_m3": 3.81
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-06T08:00:00",
+          "consommation_m3": 5.58
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-06T09:00:00",
+          "consommation_m3": 4.42
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-06T10:00:00",
+          "consommation_m3": 1.13
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-06T11:00:00",
+          "consommation_m3": 6.39
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-06T12:00:00",
+          "consommation_m3": 9.57
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T08:00:00",
+          "consommation_m3": 9.25
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T09:00:00",
+          "consommation_m3": 5.14
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T10:00:00",
+          "consommation_m3": 4.2
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T11:00:00",
+          "consommation_m3": 8.5
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T12:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T13:00:00",
+          "consommation_m3": 1.47
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T14:00:00",
+          "consommation_m3": 5.65
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-07T15:00:00",
+          "consommation_m3": 9.42
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T08:00:00",
+          "consommation_m3": 5.07
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T09:00:00",
+          "consommation_m3": 9.47
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T10:00:00",
+          "consommation_m3": 1.15
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T11:00:00",
+          "consommation_m3": 8.66
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T12:00:00",
+          "consommation_m3": 2.39
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T13:00:00",
+          "consommation_m3": 8.74
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T14:00:00",
+          "consommation_m3": 8.8
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-07T15:00:00",
+          "consommation_m3": 1.37
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-08T08:00:00",
+          "consommation_m3": 4.75
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-08T09:00:00",
+          "consommation_m3": 6.78
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-08T10:00:00",
+          "consommation_m3": 0.78
+        },
+        {
+          "compteur_id": "EAU_0103",
+          "date_mesure": "2024-10-08T11:00:00",
+          "consommation_m3": 6.75
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-08T08:00:00",
+          "consommation_m3": 5.76
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-08T09:00:00",
+          "consommation_m3": 5.06
+        },
+        {
+          "compteur_id": "EAU_0246",
+          "date_mesure": "2024-10-08T10:00:00",
+          "consommation_m3": 8.21
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT013",
+      "type_energie": "eau",
+      "unite": "m3",
+      "date_generation": "2024-10-15",
+      "mesures": [
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-01T08:00:00",
+          "consommation_m3": 2.62
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-01T09:00:00",
+          "consommation_m3": 3.93
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-01T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-01T11:00:00",
+          "consommation_m3": 3.55
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T08:00:00",
+          "consommation_m3": 9.25
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T09:00:00",
+          "consommation_m3": 8.53
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T10:00:00",
+          "consommation_m3": 4.58
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T11:00:00",
+          "consommation_m3": 3.21
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T12:00:00",
+          "consommation_m3": 8.65
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T13:00:00",
+          "consommation_m3": 8.95
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T14:00:00",
+          "consommation_m3": 6.78
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-02T15:00:00",
+          "consommation_m3": 9.65
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T08:00:00",
+          "consommation_m3": 5.04
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T09:00:00",
+          "consommation_m3": 8.5
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T10:00:00",
+          "consommation_m3": 7.15
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T11:00:00",
+          "consommation_m3": 1.1
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T12:00:00",
+          "consommation_m3": 3.97
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T13:00:00",
+          "consommation_m3": 5.46
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-03T14:00:00",
+          "consommation_m3": 6.1
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-04T08:00:00",
+          "consommation_m3": 9.89
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-04T09:00:00",
+          "consommation_m3": 7.23
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-04T10:00:00",
+          "consommation_m3": 3.79
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-04T11:00:00",
+          "consommation_m3": 4.05
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-04T12:00:00",
+          "consommation_m3": 2.38
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-05T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-05T09:00:00",
+          "consommation_m3": 8.46
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-05T10:00:00",
+          "consommation_m3": 4.7
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T08:00:00",
+          "consommation_m3": 2.53
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T09:00:00",
+          "consommation_m3": 8.34
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T10:00:00",
+          "consommation_m3": 3.43
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T11:00:00",
+          "consommation_m3": 9.97
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T12:00:00",
+          "consommation_m3": 2.33
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T13:00:00",
+          "consommation_m3": 6.5
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-06T14:00:00",
+          "consommation_m3": 4.66
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T08:00:00",
+          "consommation_m3": 9.37
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T09:00:00",
+          "consommation_m3": 6.09
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T10:00:00",
+          "consommation_m3": 2.1
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T11:00:00",
+          "consommation_m3": 0.87
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T12:00:00",
+          "consommation_m3": 4.94
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-07T13:00:00",
+          "consommation_m3": 5.21
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-08T08:00:00",
+          "consommation_m3": 7.1
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-08T09:00:00",
+          "consommation_m3": 8.35
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-08T10:00:00",
+          "consommation_m3": 7.32
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-09T08:00:00",
+          "consommation_m3": 7.34
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-09T09:00:00",
+          "consommation_m3": 7.45
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-09T10:00:00",
+          "consommation_m3": 9.19
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-09T11:00:00",
+          "consommation_m3": 9.37
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-10T08:00:00",
+          "consommation_m3": 6.72
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-10T09:00:00",
+          "consommation_m3": 8.31
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-10T10:00:00",
+          "consommation_m3": 1.31
+        },
+        {
+          "compteur_id": "EAU_0186",
+          "date_mesure": "2024-10-10T11:00:00",
+          "consommation_m3": 6.13
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT022",
+      "type_energie": "eau",
+      "unite": "m3",
+      "date_generation": "2024-10-15",
+      "mesures": [
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T08:00:00",
+          "consommation_m3": 1.0
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T09:00:00",
+          "consommation_m3": 8.22
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T10:00:00",
+          "consommation_m3": 8.42
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T11:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T12:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T13:00:00",
+          "consommation_m3": 6.63
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-01T14:00:00",
+          "consommation_m3": 2.81
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-02T08:00:00",
+          "consommation_m3": 4.42
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-02T09:00:00",
+          "consommation_m3": 6.27
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-02T10:00:00",
+          "consommation_m3": 7.5
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-02T11:00:00",
+          "consommation_m3": 5.85
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-02T12:00:00",
+          "consommation_m3": 2.47
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-03T08:00:00",
+          "consommation_m3": 3.26
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-03T09:00:00",
+          "consommation_m3": 9.45
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-03T10:00:00",
+          "consommation_m3": 3.74
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-04T08:00:00",
+          "consommation_m3": 8.74
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-04T09:00:00",
+          "consommation_m3": 7.55
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-04T10:00:00",
+          "consommation_m3": 1.58
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-04T11:00:00",
+          "consommation_m3": 3.83
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-04T12:00:00",
+          "consommation_m3": 3.6
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-05T08:00:00",
+          "consommation_m3": 7.96
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-05T09:00:00",
+          "consommation_m3": 7.27
+        },
+        {
+          "compteur_id": "EAU_0369",
+          "date_mesure": "2024-10-05T10:00:00",
+          "consommation_m3": null
+        }
+      ]
+    }
+  ]
+}

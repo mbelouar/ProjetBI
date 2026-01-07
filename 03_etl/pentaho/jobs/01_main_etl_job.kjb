@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>01_main_etl_job</name>
+  <description>Job principal d'orchestration du pipeline ETL complet
+Orchestre l'exécution de 32 transformations dans l'ordre:
+- Phase 1: Extraction (8 transformations)
+- Phase 2: Nettoyage (8 transformations)
+- Phase 3: Enrichissement (6 transformations)
+- Phase 4: Dimensions (5 transformations)
+- Phase 5: Faits (3 transformations)
+- Phase 6: Chargement (2 transformations)</description>
+  <extended_description/>
+  <job_version>1.0</job_version>
+  <job_status>0</job_status>
+  <directory>/</directory>
+  <parameters>
+  </parameters>
+  <log>
+    <trans-log-table>
+      <connection/>
+      <schema/>
+      <table/>
+      <size_limit_lines/>
+      <interval/>
+      <timeout_days/>
+      <field>
+        <id>ID_BATCH</id>
+        <enabled>Y</enabled>
+        <name>ID_BATCH</name>
+      </field>
+    </trans-log-table>
+  </log>
+  <created_user>-</created_user>
+  <created_date>2026/01/06 18:00:00.000</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2026/01/06 18:00:00.000</modified_date>
+  <notepads>
+    <notepad>
+      <note>JOB PRINCIPAL ETL - Pipeline Complet
+32 transformations orchestrées automatiquement</note>
+      <xloc>100</xloc>
+      <yloc>50</yloc>
+      <width>400</width>
+      <heigth>60</heigth>
+    </notepad>
+  </notepads>
+  <entries>
+    <!-- START -->
+    <entry>
+      <name>START</name>
+      <description>Point de départ du job ETL</description>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>100</xloc>
+      <yloc>50</yloc>
+    </entry>
+    
+    <!-- Check DB Connections -->
+    <entry>
+      <name>Check_DB_Connections</name>
+      <description>Vérifier les connexions aux bases de données</description>
+      <type>CHECK_DB_CONNECTIONS</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>250</xloc>
+      <yloc>50</yloc>
+      <connection>
+        <name>greencity_operational</name>
+      </connection>
+      <connection>
+        <name>greencity_dw</name>
+      </connection>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 1: EXTRACTION (8 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Extraction MySQL - Regions -->
+    <entry>
+      <name>Extract_MySQL_Regions</name>
+      <description>Extraction des régions depuis MySQL</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/01_extraction_mysql.ktr</filename>
+      <transname>01_extraction_mysql</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>100</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction MySQL - Buildings -->
+    <entry>
+      <name>Extract_MySQL_Buildings</name>
+      <description>Extraction des bâtiments depuis MySQL</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/02_extraction_mysql_buildings.ktr</filename>
+      <transname>02_extraction_mysql_buildings</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>250</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction MySQL - Clients -->
+    <entry>
+      <name>Extract_MySQL_Clients</name>
+      <description>Extraction des clients depuis MySQL</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/03_extraction_mysql_clients.ktr</filename>
+      <transname>03_extraction_mysql_clients</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>400</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction MySQL - Compteurs -->
+    <entry>
+      <name>Extract_MySQL_Compteurs</name>
+      <description>Extraction des compteurs depuis MySQL</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/04_extraction_mysql_compteurs.ktr</filename>
+      <transname>04_extraction_mysql_compteurs</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>550</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction MySQL - Factures -->
+    <entry>
+      <name>Extract_MySQL_Factures</name>
+      <description>Extraction des factures depuis MySQL</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/05_extraction_mysql_factures.ktr</filename>
+      <transname>05_extraction_mysql_factures</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>700</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction JSON - Eau -->
+    <entry>
+      <name>Extract_JSON_Eau</name>
+      <description>Extraction consommation eau depuis JSON</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/06_extraction_json_eau.ktr</filename>
+      <transname>06_extraction_json_eau</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>850</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction JSON - Elec -->
+    <entry>
+      <name>Extract_JSON_Elec</name>
+      <description>Extraction consommation électricité depuis JSON</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/07_extraction_json_elec.ktr</filename>
+      <transname>07_extraction_json_elec</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1000</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Extraction JSON - Gaz -->
+    <entry>
+      <name>Extract_JSON_Gaz</name>
+      <description>Extraction consommation gaz depuis JSON</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/extractions/08_extraction_json_gaz.ktr</filename>
+      <transname>08_extraction_json_gaz</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1150</xloc>
+      <yloc>150</yloc>
+    </entry>
+    
+    <!-- Wait Extraction Complete -->
+    <entry>
+      <name>Wait_Extraction_Complete</name>
+      <description>Attendre la fin de toutes les extractions</description>
+      <type>DUMMY</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>650</xloc>
+      <yloc>250</yloc>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 2: NETTOYAGE (8 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Nettoyage Clients -->
+    <entry>
+      <name>Clean_Clients</name>
+      <description>Nettoyage des données clients</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04_transformation_nettoyage_clients.ktr</filename>
+      <transname>04_transformation_nettoyage_clients</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>100</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Batiments -->
+    <entry>
+      <name>Clean_Batiments</name>
+      <description>Nettoyage des données bâtiments</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04b_transformation_nettoyage_batiments.ktr</filename>
+      <transname>04b_transformation_nettoyage_batiments</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>250</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Factures -->
+    <entry>
+      <name>Clean_Factures</name>
+      <description>Nettoyage des données factures</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04c_transformation_nettoyage_factures.ktr</filename>
+      <transname>04c_transformation_nettoyage_factures</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>400</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Regions -->
+    <entry>
+      <name>Clean_Regions</name>
+      <description>Nettoyage des données régions</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04h_transformation_nettoyage_regions.ktr</filename>
+      <transname>04h_transformation_nettoyage_regions</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>550</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Consommation Eau -->
+    <entry>
+      <name>Clean_Consommation_Eau</name>
+      <description>Nettoyage consommation eau</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04d_transformation_nettoyage_consommation_eau.ktr</filename>
+      <transname>04d_transformation_nettoyage_consommation_eau</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>700</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Consommation Elec -->
+    <entry>
+      <name>Clean_Consommation_Elec</name>
+      <description>Nettoyage consommation électricité</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04e_transformation_nettoyage_consommation_elec.ktr</filename>
+      <transname>04e_transformation_nettoyage_consommation_elec</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>850</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Consommation Gaz -->
+    <entry>
+      <name>Clean_Consommation_Gaz</name>
+      <description>Nettoyage consommation gaz</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04f_transformation_nettoyage_consommation_gaz.ktr</filename>
+      <transname>04f_transformation_nettoyage_consommation_gaz</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1000</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Nettoyage Environnement -->
+    <entry>
+      <name>Clean_Environnement</name>
+      <description>Nettoyage données environnementales</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/nettoyage/04g_transformation_nettoyage_environnement.ktr</filename>
+      <transname>04g_transformation_nettoyage_environnement</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1150</xloc>
+      <yloc>350</yloc>
+    </entry>
+    
+    <!-- Wait Cleaning Complete -->
+    <entry>
+      <name>Wait_Cleaning_Complete</name>
+      <description>Attendre la fin de tous les nettoyages</description>
+      <type>DUMMY</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>650</xloc>
+      <yloc>450</yloc>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 3: ENRICHISSEMENT (6 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Enrichissement Factures -->
+    <entry>
+      <name>Enrich_Factures</name>
+      <description>Enrichissement des factures</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05_transformation_enrichissement_factures.ktr</filename>
+      <transname>05_transformation_enrichissement_factures</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>200</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Enrichissement Consommation Eau -->
+    <entry>
+      <name>Enrich_Consommation_Eau</name>
+      <description>Enrichissement consommation eau</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05b_transformation_enrichissement_consommation_eau.ktr</filename>
+      <transname>05b_transformation_enrichissement_consommation_eau</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>400</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Enrichissement Consommation Elec -->
+    <entry>
+      <name>Enrich_Consommation_Elec</name>
+      <description>Enrichissement consommation électricité</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05c_transformation_enrichissement_consommation_elec.ktr</filename>
+      <transname>05c_transformation_enrichissement_consommation_elec</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Enrichissement Consommation Gaz -->
+    <entry>
+      <name>Enrich_Consommation_Gaz</name>
+      <description>Enrichissement consommation gaz</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05d_transformation_enrichissement_consommation_gaz.ktr</filename>
+      <transname>05d_transformation_enrichissement_consommation_gaz</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>800</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Enrichissement Environnement -->
+    <entry>
+      <name>Enrich_Environnement</name>
+      <description>Enrichissement données environnementales</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05e_transformation_enrichissement_environnement.ktr</filename>
+      <transname>05e_transformation_enrichissement_environnement</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1000</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Enrichissement Regions -->
+    <entry>
+      <name>Enrich_Regions</name>
+      <description>Enrichissement données régions</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/enrichissement/05f_transformation_enrichissement_regions.ktr</filename>
+      <transname>05f_transformation_enrichissement_regions</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1200</xloc>
+      <yloc>550</yloc>
+    </entry>
+    
+    <!-- Wait Enrichment Complete -->
+    <entry>
+      <name>Wait_Enrichment_Complete</name>
+      <description>Attendre la fin de tous les enrichissements</description>
+      <type>DUMMY</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>650</yloc>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 4: DIMENSIONS (5 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Preparation Dim Client -->
+    <entry>
+      <name>Prepare_Dim_Client</name>
+      <description>Préparation dimension client</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/dimensions/06a_preparation_dim_client.ktr</filename>
+      <transname>06a_preparation_dim_client</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>200</xloc>
+      <yloc>750</yloc>
+    </entry>
+    
+    <!-- Preparation Dim Batiment -->
+    <entry>
+      <name>Prepare_Dim_Batiment</name>
+      <description>Préparation dimension bâtiment</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/dimensions/06b_preparation_dim_batiment.ktr</filename>
+      <transname>06b_preparation_dim_batiment</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>400</xloc>
+      <yloc>750</yloc>
+    </entry>
+    
+    <!-- Preparation Dim Compteur -->
+    <entry>
+      <name>Prepare_Dim_Compteur</name>
+      <description>Préparation dimension compteur</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/dimensions/06c_preparation_dim_compteur.ktr</filename>
+      <transname>06c_preparation_dim_compteur</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>750</yloc>
+    </entry>
+    
+    <!-- Preparation Dim Region -->
+    <entry>
+      <name>Prepare_Dim_Region</name>
+      <description>Préparation dimension région</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/dimensions/06d_preparation_dim_region.ktr</filename>
+      <transname>06d_preparation_dim_region</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>800</xloc>
+      <yloc>750</yloc>
+    </entry>
+    
+    <!-- Preparation Dim Type Energie -->
+    <entry>
+      <name>Prepare_Dim_Type_Energie</name>
+      <description>Préparation dimension type énergie</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/dimensions/06e_preparation_dim_type_energie.ktr</filename>
+      <transname>06e_preparation_dim_type_energie</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>1000</xloc>
+      <yloc>750</yloc>
+    </entry>
+    
+    <!-- Wait Dimensions Complete -->
+    <entry>
+      <name>Wait_Dimensions_Complete</name>
+      <description>Attendre la fin de toutes les préparations dimensions</description>
+      <type>DUMMY</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>850</yloc>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 5: FAITS (3 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Preparation Fact Consommation -->
+    <entry>
+      <name>Prepare_Fact_Consommation</name>
+      <description>Préparation table de faits consommation</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/faits/07a_preparation_fact_consommation.ktr</filename>
+      <transname>07a_preparation_fact_consommation</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>300</xloc>
+      <yloc>950</yloc>
+    </entry>
+    
+    <!-- Preparation Fact Rentabilite -->
+    <entry>
+      <name>Prepare_Fact_Rentabilite</name>
+      <description>Préparation table de faits rentabilité</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/faits/07b_preparation_fact_rentabilite.ktr</filename>
+      <transname>07b_preparation_fact_rentabilite</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>950</yloc>
+    </entry>
+    
+    <!-- Preparation Fact Environnement -->
+    <entry>
+      <name>Prepare_Fact_Environnement</name>
+      <description>Préparation table de faits environnement</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/faits/07c_preparation_fact_environnement.ktr</filename>
+      <transname>07c_preparation_fact_environnement</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>900</xloc>
+      <yloc>950</yloc>
+    </entry>
+    
+    <!-- Wait Facts Complete -->
+    <entry>
+      <name>Wait_Facts_Complete</name>
+      <description>Attendre la fin de toutes les préparations faits</description>
+      <type>DUMMY</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>1050</yloc>
+    </entry>
+    
+    <!-- ============================================ -->
+    <!-- PHASE 6: CHARGEMENT (2 transformations) -->
+    <!-- ============================================ -->
+    
+    <!-- Chargement Dimensions -->
+    <entry>
+      <name>Load_Dimensions</name>
+      <description>Chargement des dimensions dans le Data Warehouse</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/chargement/08a_chargement_dimensions.ktr</filename>
+      <transname>08a_chargement_dimensions</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>400</xloc>
+      <yloc>1150</yloc>
+    </entry>
+    
+    <!-- Chargement Faits -->
+    <entry>
+      <name>Load_Facts</name>
+      <description>Chargement des tables de faits dans le Data Warehouse</description>
+      <type>TRANS</type>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}/../transformations/chargement/08b_chargement_faits.ktr</filename>
+      <transname>08b_chargement_faits</transname>
+      <parameters>
+      </parameters>
+      <params>
+      </params>
+      <log>
+        <trans-log-table>
+          <connection/>
+          <schema/>
+          <table/>
+        </trans-log-table>
+      </log>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>800</xloc>
+      <yloc>1150</yloc>
+    </entry>
+    
+    <!-- Success Message -->
+    <entry>
+      <name>Success_Message</name>
+      <description>Afficher message de succès</description>
+      <type>WRITE_TO_LOG</type>
+      <specification_method>filename</specification_method>
+      <filename/>
+      <file_servlet_output>N</file_servlet_output>
+      <log_level>Basic</log_level>
+      <log_message>✅ Pipeline ETL exécuté avec succès! Toutes les transformations ont été complétées.</log_message>
+      <create_parent_folder>N</create_parent_folder>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>LOG_LEVEL_BASIC</loglevel>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>1250</yloc>
+    </entry>
+    
+    <!-- END -->
+    <entry>
+      <name>END</name>
+      <description>Fin du job ETL</description>
+      <type>SPECIAL</type>
+      <start>N</start>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <xloc>600</xloc>
+      <yloc>1350</yloc>
+    </entry>
+  </entries>
+  
+  <hops>
+    <!-- START → Check DB Connections -->
+    <hop>
+      <from>START</from>
+      <to>Check_DB_Connections</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Check DB Connections → All Extractions -->
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_MySQL_Regions</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_MySQL_Buildings</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_MySQL_Clients</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_MySQL_Compteurs</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_MySQL_Factures</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_JSON_Eau</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_JSON_Elec</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check_DB_Connections</from>
+      <to>Extract_JSON_Gaz</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- All Extractions → Wait Extraction Complete -->
+    <hop>
+      <from>Extract_MySQL_Regions</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_MySQL_Buildings</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_MySQL_Clients</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_MySQL_Compteurs</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_MySQL_Factures</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_JSON_Eau</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_JSON_Elec</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Extract_JSON_Gaz</from>
+      <to>Wait_Extraction_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Wait Extraction Complete → All Cleanings -->
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Clients</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Batiments</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Factures</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Regions</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Consommation_Eau</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Consommation_Elec</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Consommation_Gaz</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Extraction_Complete</from>
+      <to>Clean_Environnement</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- All Cleanings → Wait Cleaning Complete -->
+    <hop>
+      <from>Clean_Clients</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Batiments</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Factures</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Regions</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Consommation_Eau</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Consommation_Elec</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Consommation_Gaz</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Clean_Environnement</from>
+      <to>Wait_Cleaning_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Wait Cleaning Complete → All Enrichments -->
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Factures</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Consommation_Eau</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Consommation_Elec</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Consommation_Gaz</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Environnement</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Cleaning_Complete</from>
+      <to>Enrich_Regions</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- All Enrichments → Wait Enrichment Complete -->
+    <hop>
+      <from>Enrich_Factures</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Enrich_Consommation_Eau</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Enrich_Consommation_Elec</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Enrich_Consommation_Gaz</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Enrich_Environnement</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Enrich_Regions</from>
+      <to>Wait_Enrichment_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Wait Enrichment Complete → All Dimensions -->
+    <hop>
+      <from>Wait_Enrichment_Complete</from>
+      <to>Prepare_Dim_Client</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Enrichment_Complete</from>
+      <to>Prepare_Dim_Batiment</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Enrichment_Complete</from>
+      <to>Prepare_Dim_Compteur</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Enrichment_Complete</from>
+      <to>Prepare_Dim_Region</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Enrichment_Complete</from>
+      <to>Prepare_Dim_Type_Energie</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- All Dimensions → Wait Dimensions Complete -->
+    <hop>
+      <from>Prepare_Dim_Client</from>
+      <to>Wait_Dimensions_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Dim_Batiment</from>
+      <to>Wait_Dimensions_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Dim_Compteur</from>
+      <to>Wait_Dimensions_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Dim_Region</from>
+      <to>Wait_Dimensions_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Dim_Type_Energie</from>
+      <to>Wait_Dimensions_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Wait Dimensions Complete → All Facts -->
+    <hop>
+      <from>Wait_Dimensions_Complete</from>
+      <to>Prepare_Fact_Consommation</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Dimensions_Complete</from>
+      <to>Prepare_Fact_Rentabilite</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait_Dimensions_Complete</from>
+      <to>Prepare_Fact_Environnement</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- All Facts → Wait Facts Complete -->
+    <hop>
+      <from>Prepare_Fact_Consommation</from>
+      <to>Wait_Facts_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Fact_Rentabilite</from>
+      <to>Wait_Facts_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepare_Fact_Environnement</from>
+      <to>Wait_Facts_Complete</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Wait Facts Complete → Load Dimensions -->
+    <hop>
+      <from>Wait_Facts_Complete</from>
+      <to>Load_Dimensions</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Load Dimensions → Load Facts -->
+    <hop>
+      <from>Load_Dimensions</from>
+      <to>Load_Facts</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Load Facts → Success Message -->
+    <hop>
+      <from>Load_Facts</from>
+      <to>Success_Message</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    
+    <!-- Success Message → END -->
+    <hop>
+      <from>Success_Message</from>
+      <to>END</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</job>
+

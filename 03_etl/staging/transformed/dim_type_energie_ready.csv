@@ -1,0 +1,4 @@
+nom_energie;unite_mesure;facteur_emission_co2;categorie
+Électricité;kWh;0.45;Énergie
+Eau;m3;0.0003;Ressource
+Gaz;m3;2.35;Énergie

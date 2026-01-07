@@ -1,0 +1,2993 @@
+{
+  "id_region": "REG09",
+  "batiments": [
+    {
+      "id_batiment": "BAT010",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 5.35
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 2.83
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 9.96
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 1.04
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 9.8
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 4.51
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 5.48
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 2.49
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 6.29
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.39
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 9.95
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 9.95
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 6.66
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 1.16
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 3.35
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 9.21
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 1.52
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 8.41
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 0.96
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 4.96
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 4.65
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 7.85
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 0.93
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.15
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 8.61
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 5.89
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 9.76
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 8.79
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 8.9
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 3.67
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 1.54
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 9.18
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 9.05
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 9.18
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 7.6
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 2.7
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 7.32
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 9.61
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 3.13
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 3.79
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 6.16
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 1.94
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 7.33
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 8.51
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 5.84
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T14:00:00",
+          "consommation_m3": 3.84
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-02T15:00:00",
+          "consommation_m3": 9.72
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 3.79
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 4.9
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 9.73
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 2.46
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 5.88
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 9.07
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 5.18
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 0.67
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 0.95
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 2.84
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 3.95
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.6
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 3.74
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 1.87
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 5.56
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 6.33
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T14:00:00",
+          "consommation_m3": 1.43
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-03T15:00:00",
+          "consommation_m3": 7.96
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 6.77
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 2.29
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 6.97
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 8.66
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 7.09
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 8.18
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 7.88
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 9.95
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 1.28
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 8.1
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 3.56
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.02
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 8.35
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 7.35
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 6.76
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 9.05
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T14:00:00",
+          "consommation_m3": 4.67
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-03T15:00:00",
+          "consommation_m3": 0.97
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 5.32
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 3.07
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 9.59
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 6.53
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 7.73
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 3.41
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 6.8
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 7.45
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 5.96
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 4.2
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 4.21
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 1.8
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 1.19
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 4.32
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 1.37
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 9.13
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T13:00:00",
+          "consommation_m3": 6.41
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-04T14:00:00",
+          "consommation_m3": 2.59
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 9.83
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 4.62
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 4.73
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 7.93
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-04T13:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 4.49
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 0.65
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 6.98
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 9.38
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 4.69
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 5.58
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 2.76
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 5.75
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 5.49
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 6.91
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-04T13:00:00",
+          "consommation_m3": 5.33
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 1.95
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 6.82
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 9.61
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 9.48
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 4.53
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 4.77
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 6.11
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 2.69
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 4.37
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 6.76
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 5.07
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T13:00:00",
+          "consommation_m3": 9.5
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-05T14:00:00",
+          "consommation_m3": 5.79
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 1.34
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 7.24
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 3.46
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 5.32
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 4.39
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 9.37
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 3.37
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 9.0
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 6.78
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 8.91
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T13:00:00",
+          "consommation_m3": 3.85
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T14:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-05T15:00:00",
+          "consommation_m3": 1.18
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 6.3
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 7.67
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 4.51
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 0.51
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 7.06
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 4.28
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 0.51
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 1.41
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 7.85
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 3.85
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 9.4
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 5.98
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 8.02
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-06T15:00:00",
+          "consommation_m3": 7.86
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 1.04
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 0.98
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 6.08
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 2.04
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 6.01
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 4.86
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 5.9
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 7.12
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 1.37
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 8.84
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 7.58
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 2.87
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 1.29
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 5.39
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 3.05
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 8.85
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 6.76
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 4.07
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 6.88
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 6.17
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 2.02
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 4.86
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-06T15:00:00",
+          "consommation_m3": 2.33
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 8.77
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 6.96
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 4.16
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 4.29
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 9.0
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 6.03
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 5.01
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 9.46
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 0.91
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 3.73
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 4.48
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 9.69
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 4.38
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 0.93
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 5.52
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 3.22
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 5.22
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 9.37
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 6.45
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 5.57
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 7.5
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 0.94
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 3.54
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 3.9
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T13:00:00",
+          "consommation_m3": 4.23
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-07T14:00:00",
+          "consommation_m3": 1.82
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 3.13
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 6.98
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 9.66
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 2.72
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T13:00:00",
+          "consommation_m3": 4.25
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T14:00:00",
+          "consommation_m3": 3.75
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-07T15:00:00",
+          "consommation_m3": 7.56
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 8.37
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 6.69
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 3.8
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 2.98
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 7.73
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 3.28
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 0.56
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T11:00:00",
+          "consommation_m3": 4.9
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T12:00:00",
+          "consommation_m3": 9.96
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T13:00:00",
+          "consommation_m3": 4.47
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T14:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-08T15:00:00",
+          "consommation_m3": 2.2
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 7.24
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 7.19
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 3.02
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T11:00:00",
+          "consommation_m3": 9.29
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T12:00:00",
+          "consommation_m3": 4.84
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-08T13:00:00",
+          "consommation_m3": 2.45
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 8.17
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 3.34
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 8.09
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-08T11:00:00",
+          "consommation_m3": 3.94
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 2.72
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 2.53
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 7.49
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 3.72
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 1.83
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 9.91
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T11:00:00",
+          "consommation_m3": 0.57
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T12:00:00",
+          "consommation_m3": 1.9
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T13:00:00",
+          "consommation_m3": 4.68
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-08T14:00:00",
+          "consommation_m3": 2.5
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": 8.56
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 3.07
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 3.34
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-08T11:00:00",
+          "consommation_m3": 8.45
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 4.06
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": 6.78
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 7.88
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-09T11:00:00",
+          "consommation_m3": 2.56
+        },
+        {
+          "compteur_id": "GAZ_0112",
+          "date_mesure": "2024-11-09T12:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 5.48
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": 9.18
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 6.75
+        },
+        {
+          "compteur_id": "GAZ_0136",
+          "date_mesure": "2024-11-09T11:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 7.63
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": 2.79
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 3.47
+        },
+        {
+          "compteur_id": "GAZ_0153",
+          "date_mesure": "2024-11-09T11:00:00",
+          "consommation_m3": 7.14
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 7.28
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": 2.01
+        },
+        {
+          "compteur_id": "GAZ_0154",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 7.93
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 4.42
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 7.54
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-09T11:00:00",
+          "consommation_m3": 0.8
+        },
+        {
+          "compteur_id": "GAZ_0294",
+          "date_mesure": "2024-11-09T12:00:00",
+          "consommation_m3": 4.63
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T08:00:00",
+          "consommation_m3": 1.7
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T09:00:00",
+          "consommation_m3": 8.08
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T10:00:00",
+          "consommation_m3": 8.69
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T11:00:00",
+          "consommation_m3": 6.85
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T12:00:00",
+          "consommation_m3": 2.58
+        },
+        {
+          "compteur_id": "GAZ_0370",
+          "date_mesure": "2024-11-09T13:00:00",
+          "consommation_m3": 3.19
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT045",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 7.42
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 5.13
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 3.54
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 7.21
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 3.48
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 2.61
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 5.78
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 4.74
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 7.32
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.84
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 8.67
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 9.85
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 1.61
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 9.0
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 6.87
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 4.91
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 0.97
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 3.8
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 0.93
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 3.84
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 6.56
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 5.8
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 8.2
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 1.98
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 5.81
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 5.5
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 4.85
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 7.6
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 8.7
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 2.3
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 9.4
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 0.74
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T13:00:00",
+          "consommation_m3": 5.46
+        },
+        {
+          "compteur_id": "GAZ_0229",
+          "date_mesure": "2024-11-07T14:00:00",
+          "consommation_m3": 9.65
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT033",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 8.42
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 4.65
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 5.06
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 5.91
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 5.35
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 7.66
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 8.4
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 3.62
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 2.41
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 1.48
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 8.85
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 8.26
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 3.13
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 6.31
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 0.61
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 8.38
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 3.26
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 6.47
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 6.0
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 1.21
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 9.64
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 9.58
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 5.21
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 4.95
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 1.9
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 9.97
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 5.66
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 1.25
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 5.4
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 5.5
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-02T14:00:00",
+          "consommation_m3": 7.24
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 3.99
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 7.02
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 2.05
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 7.45
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 3.52
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 3.2
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 3.44
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 2.27
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 3.12
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 9.86
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 9.1
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 3.15
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-03T14:00:00",
+          "consommation_m3": 9.68
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 8.54
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 1.68
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 5.13
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 4.56
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 5.76
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 9.63
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-03T14:00:00",
+          "consommation_m3": 5.98
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 8.71
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 6.97
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 3.52
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 1.56
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 4.98
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 2.4
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 2.65
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 8.61
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 6.33
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 6.83
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 6.75
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 9.67
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 5.74
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 6.62
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 9.27
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 9.83
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 7.22
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 8.11
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 2.73
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 2.27
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 3.53
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 9.39
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 6.53
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 0.61
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 2.93
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 7.15
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 0.79
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 4.58
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 3.12
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 1.39
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 8.61
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 7.31
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 4.68
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 8.7
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 6.71
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 8.77
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 5.13
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 6.52
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 3.05
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 3.69
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 0.93
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 7.37
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 7.33
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-06T15:00:00",
+          "consommation_m3": 9.74
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 7.68
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 1.47
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 4.75
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 2.79
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 1.69
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T13:00:00",
+          "consommation_m3": 1.13
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-06T14:00:00",
+          "consommation_m3": 1.16
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 5.45
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 6.65
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 5.68
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 7.24
+        },
+        {
+          "compteur_id": "GAZ_0265",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 7.76
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 0.86
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 5.5
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 5.17
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 8.78
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T12:00:00",
+          "consommation_m3": 1.87
+        },
+        {
+          "compteur_id": "GAZ_0293",
+          "date_mesure": "2024-11-07T13:00:00",
+          "consommation_m3": 3.44
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 9.29
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 6.0
+        },
+        {
+          "compteur_id": "GAZ_0386",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": 3.22
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT018",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 8.67
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 4.74
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 0.65
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 3.1
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 5.05
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 1.5
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 1.73
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 3.36
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 7.74
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 5.76
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 4.01
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 2.24
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 6.68
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 8.97
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 9.74
+        },
+        {
+          "compteur_id": "GAZ_0291",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 9.94
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT047",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 6.73
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.01
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 7.36
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 6.99
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 1.61
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 2.06
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 6.36
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 7.82
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 0.77
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.46
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 1.15
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 1.44
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.36
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 3.67
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 9.62
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 9.34
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 1.41
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 8.39
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 8.6
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 5.27
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 7.49
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 0.87
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 3.51
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 5.56
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 1.48
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 1.0
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 1.72
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 3.26
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 4.46
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-02T14:00:00",
+          "consommation_m3": 4.83
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 6.61
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 5.59
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 2.07
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 4.9
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 9.79
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 3.78
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.03
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 7.56
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 7.33
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.43
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 3.33
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 5.33
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 2.13
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 6.57
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 5.3
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 6.77
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 1.18
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 4.21
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 1.71
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 9.67
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-03T14:00:00",
+          "consommation_m3": 0.68
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 1.3
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 1.29
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 4.14
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 4.06
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 2.61
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 0.63
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 8.73
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 8.73
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 7.76
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 8.75
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 4.34
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 9.02
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T13:00:00",
+          "consommation_m3": 9.83
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-04T14:00:00",
+          "consommation_m3": 1.06
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 9.12
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 4.91
+        },
+        {
+          "compteur_id": "GAZ_0381",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 6.15
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 7.77
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 9.52
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 6.72
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 2.27
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 9.32
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T13:00:00",
+          "consommation_m3": 5.62
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T14:00:00",
+          "consommation_m3": 6.12
+        },
+        {
+          "compteur_id": "GAZ_0432",
+          "date_mesure": "2024-11-05T15:00:00",
+          "consommation_m3": 4.63
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 4.12
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 8.64
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 2.31
+        },
+        {
+          "compteur_id": "GAZ_0466",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 0.55
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT029",
+      "type_energie": "gaz",
+      "unite": "m3",
+      "date_generation": "2024-11-15",
+      "mesures": [
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T08:00:00",
+          "consommation_m3": 6.28
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T09:00:00",
+          "consommation_m3": 5.51
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T10:00:00",
+          "consommation_m3": 7.86
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T11:00:00",
+          "consommation_m3": 3.84
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T12:00:00",
+          "consommation_m3": 7.98
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T13:00:00",
+          "consommation_m3": 3.61
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T14:00:00",
+          "consommation_m3": 4.27
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-01T15:00:00",
+          "consommation_m3": 8.77
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T08:00:00",
+          "consommation_m3": 2.04
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T09:00:00",
+          "consommation_m3": 3.92
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T10:00:00",
+          "consommation_m3": 2.14
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T11:00:00",
+          "consommation_m3": 0.75
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T12:00:00",
+          "consommation_m3": 0.69
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T13:00:00",
+          "consommation_m3": 1.89
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T14:00:00",
+          "consommation_m3": 3.08
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-02T15:00:00",
+          "consommation_m3": 2.48
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T08:00:00",
+          "consommation_m3": 2.92
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T09:00:00",
+          "consommation_m3": 4.41
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T10:00:00",
+          "consommation_m3": 2.69
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T11:00:00",
+          "consommation_m3": 4.79
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T12:00:00",
+          "consommation_m3": 5.93
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-03T13:00:00",
+          "consommation_m3": 9.67
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T08:00:00",
+          "consommation_m3": 7.77
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T09:00:00",
+          "consommation_m3": 4.79
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T10:00:00",
+          "consommation_m3": 9.72
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T11:00:00",
+          "consommation_m3": 1.95
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T12:00:00",
+          "consommation_m3": 2.05
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-04T13:00:00",
+          "consommation_m3": 8.87
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T08:00:00",
+          "consommation_m3": 7.99
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T09:00:00",
+          "consommation_m3": 4.78
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T10:00:00",
+          "consommation_m3": 5.92
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T11:00:00",
+          "consommation_m3": 5.05
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T12:00:00",
+          "consommation_m3": 4.59
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T13:00:00",
+          "consommation_m3": 6.14
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T14:00:00",
+          "consommation_m3": 0.84
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-05T15:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-06T08:00:00",
+          "consommation_m3": 8.5
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-06T09:00:00",
+          "consommation_m3": 6.06
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-06T10:00:00",
+          "consommation_m3": 2.32
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-06T11:00:00",
+          "consommation_m3": 0.76
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-06T12:00:00",
+          "consommation_m3": 4.38
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-07T08:00:00",
+          "consommation_m3": 3.4
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-07T09:00:00",
+          "consommation_m3": 2.52
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-07T10:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-07T11:00:00",
+          "consommation_m3": 6.24
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-08T08:00:00",
+          "consommation_m3": null
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-08T09:00:00",
+          "consommation_m3": 7.22
+        },
+        {
+          "compteur_id": "GAZ_0401",
+          "date_mesure": "2024-11-08T10:00:00",
+          "consommation_m3": 9.04
+        }
+      ]
+    }
+  ]
+}

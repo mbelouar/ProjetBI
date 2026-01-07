@@ -1,0 +1,51 @@
+code_batiment;nom_batiment;code_region;type_batiment;ville;surface_m2;nombre_etages;annee_construction;certification_energetique;date_debut;date_fin;est_actuel
+BAT001;Bâtiment Laurent et Fils;REG06;Bureau;Tanger;5090.92;4;2002;C;2026-01-04;;TRUE
+BAT002;Bâtiment Maury S.A.R.L.;REG10;Commercial;Tétouan;40452.85;24;2009;E;2026-01-04;;TRUE
+BAT003;Bâtiment Guilbert S.A.;REG02;Industriel;Rabat;4400.61;10;2020;E;2026-01-04;;TRUE
+BAT004;Bâtiment Leblanc;REG06;Mixte;Tanger;10018.29;3;1982;;2026-01-04;;TRUE
+BAT005;Bâtiment Texier;REG04;Commercial;Marrakech;49268.47;28;1994;A;2026-01-04;;TRUE
+BAT006;Bâtiment Techer;REG07;Commercial;Meknès;22943.81;27;2003;B;2026-01-04;;TRUE
+BAT007;Bâtiment Chevalier;REG06;Commercial;Tanger;10870.6;9;2024;;2026-01-04;;TRUE
+BAT008;Bâtiment Lacroix;REG02;Mixte;Rabat;31931.43;18;1995;B;2026-01-04;;TRUE
+BAT009;Bâtiment Riou;REG08;Industriel;Oujda;13862.42;30;2020;;2026-01-04;;TRUE
+BAT010;Bâtiment Lecomte S.A.S.;REG09;Résidentiel;Kenitra;34388.41;27;1983;B;2026-01-04;;TRUE
+BAT011;Bâtiment Letellier;REG01;Commercial;Casablanca;20357.66;3;1993;E;2026-01-04;;TRUE
+BAT012;Bâtiment Masson S.A.;REG06;Résidentiel;Tanger;32944.21;13;2021;D;2026-01-04;;TRUE
+BAT013;Bâtiment Bazin et Fils;REG03;Commercial;Fès;7411.7;24;2015;E;2026-01-04;;TRUE
+BAT014;Bâtiment Marie;REG05;Mixte;Agadir;21707.47;19;2005;C;2026-01-04;;TRUE
+BAT015;Bâtiment Toussaint SARL;REG04;Résidentiel;Marrakech;25721.55;3;1983;A;2026-01-04;;TRUE
+BAT016;Bâtiment Camus;REG03;Résidentiel;Fès;39707.93;14;2018;A;2026-01-04;;TRUE
+BAT017;Bâtiment Duhamel Chevalier SA;REG07;Industriel;Meknès;29996.48;15;2013;C;2026-01-04;;TRUE
+BAT018;Bâtiment Aubry Evrard S.A.S.;REG09;Bureau;Kenitra;34174.03;4;2023;E;2026-01-04;;TRUE
+BAT019;Bâtiment Navarro;REG05;Commercial;Agadir;6021.83;14;1990;D;2026-01-04;;TRUE
+BAT020;Bâtiment Pruvost Vasseur SA;REG01;Commercial;Casablanca;48608.46;25;1991;E;2026-01-04;;TRUE
+BAT021;Bâtiment Guérin;REG02;Commercial;Rabat;42162.63;17;2018;B;2026-01-04;;TRUE
+BAT022;Bâtiment Berger;REG03;Commercial;Fès;38244.28;18;2013;A;2026-01-04;;TRUE
+BAT023;Bâtiment Chauveau;REG10;Commercial;Tétouan;24685.98;4;2003;C;2026-01-04;;TRUE
+BAT024;Bâtiment Nicolas;REG04;Bureau;Marrakech;12423.14;19;1985;A;2026-01-04;;TRUE
+BAT025;Bâtiment Sanchez Pichon S.A.S.;REG08;Bureau;Oujda;48910.23;18;1988;B;2026-01-04;;TRUE
+BAT026;Bâtiment Brun Cordier S.A.R.L.;REG08;Mixte;Oujda;8673.78;17;2018;D;2026-01-04;;TRUE
+BAT027;Bâtiment Renault;REG04;Mixte;Marrakech;37885.63;23;1992;;2026-01-04;;TRUE
+BAT028;Bâtiment Letellier SARL;REG05;Industriel;Agadir;49759.89;21;2003;D;2026-01-04;;TRUE
+BAT029;Bâtiment Boyer Grégoire SA;REG09;Industriel;Kenitra;6489.71;8;1984;C;2026-01-04;;TRUE
+BAT030;Bâtiment Delorme Valentin SA;REG01;Mixte;Casablanca;27919.12;19;1994;A;2026-01-04;;TRUE
+BAT031;Bâtiment Martins;REG02;Bureau;Rabat;11832.62;29;1982;C;2026-01-04;;TRUE
+BAT032;Bâtiment Hamel;REG02;Mixte;Rabat;12281.23;22;2011;B;2026-01-04;;TRUE
+BAT033;Bâtiment Tanguy S.A.;REG09;Résidentiel;Kenitra;36305.95;29;2016;E;2026-01-04;;TRUE
+BAT034;Bâtiment Devaux;REG08;Résidentiel;Oujda;39338.66;26;2006;B;2026-01-04;;TRUE
+BAT035;Bâtiment Aubry Ferreira SA;REG02;Bureau;Rabat;33119.65;12;2007;D;2026-01-04;;TRUE
+BAT036;Bâtiment Bodin;REG08;Bureau;Oujda;33831.55;21;1986;A;2026-01-04;;TRUE
+BAT037;Bâtiment Pires;REG07;Commercial;Meknès;40129.33;4;1995;B;2026-01-04;;TRUE
+BAT038;Bâtiment Blot S.A.;REG04;Mixte;Marrakech;22706.37;14;1991;C;2026-01-04;;TRUE
+BAT039;Bâtiment Le Gall SARL;REG08;Résidentiel;Oujda;43787.05;3;2008;E;2026-01-04;;TRUE
+BAT040;Bâtiment Valette;REG02;Bureau;Rabat;32781.17;18;1980;A;2026-01-04;;TRUE
+BAT041;Bâtiment Gallet Le Roux S.A.R.L.;REG04;Résidentiel;Marrakech;20617.5;16;1993;D;2026-01-04;;TRUE
+BAT042;Bâtiment Louis;REG01;Résidentiel;Casablanca;19259.17;13;1996;D;2026-01-04;;TRUE
+BAT043;Bâtiment Boulanger;REG05;Industriel;Agadir;34981.28;24;2015;;2026-01-04;;TRUE
+BAT044;Bâtiment Ferreira SARL;REG08;Résidentiel;Oujda;9899.94;7;1983;E;2026-01-04;;TRUE
+BAT045;Bâtiment Nguyen;REG09;Bureau;Kenitra;37524.79;2;1983;E;2026-01-04;;TRUE
+BAT046;Bâtiment Marchal Perret SA;REG08;Mixte;Oujda;46009.66;17;1990;A;2026-01-04;;TRUE
+BAT047;Bâtiment Martineau;REG09;Bureau;Kenitra;42641.46;3;2018;A;2026-01-04;;TRUE
+BAT048;Bâtiment Labbé;REG04;Industriel;Marrakech;6434.39;29;2016;B;2026-01-04;;TRUE
+BAT049;Bâtiment Perret Delorme S.A.S.;REG10;Mixte;Tétouan;2467.21;3;2006;;2026-01-04;;TRUE
+BAT050;Bâtiment Jacquet S.A.S.;REG10;Mixte;Tétouan;26377.74;30;1996;B;2026-01-04;;TRUE

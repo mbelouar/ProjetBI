@@ -1,0 +1,4 @@
+﻿id_type_energie,nom_energie,unite_mesure,facteur_emission_co2,categorie,date_ajout,date_maj
+1,Électricité,kWh,0.45,Énergie,2026-01-04 12:25:31,2026-01-04 12:25:31
+2,Eau,m3,0.0003,Ressource,2026-01-04 12:25:31,2026-01-04 12:25:31
+3,Gaz,m3,2.35,Énergie,2026-01-04 12:25:31,2026-01-04 12:25:31

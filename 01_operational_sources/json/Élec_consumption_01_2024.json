@@ -1,0 +1,3042 @@
+{
+  "id_region": "REG05",
+  "batiments": [
+    {
+      "id_batiment": "BAT014",
+      "type_energie": "électricité",
+      "unite": "kWh",
+      "date_generation": "2024-01-15",
+      "mesures": [
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 68.7
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 111.0
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 141.4
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 187.6
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 50.5
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 115.3
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 116.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 177.1
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 116.6
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 183.2
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 164.8
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 123.7
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 128.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 124.9
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 175.7
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 105.9
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 140.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 106.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-01T15:00:00",
+          "consommation_kWh": 81.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 91.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 184.8
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 181.7
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 153.0
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 146.8
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 101.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 123.6
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 186.4
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 88.2
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 105.0
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 121.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 178.0
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 129.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 55.4
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 57.2
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 156.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 142.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 87.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 88.3
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 178.8
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 187.4
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 96.7
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 84.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 135.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 180.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 161.2
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 191.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 85.4
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 79.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 60.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 172.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-03T13:00:00",
+          "consommation_kWh": 68.6
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 158.5
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 189.8
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 51.3
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 165.0
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 53.1
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 109.1
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 120.4
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 86.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 136.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 86.9
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 66.5
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 146.0
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 60.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 93.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 123.5
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 132.5
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 120.0
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 127.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 136.6
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 110.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 190.5
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 178.7
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": 55.5
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 176.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 185.6
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 123.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 82.3
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 117.5
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 163.8
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 169.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 71.3
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 87.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 156.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 80.7
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 193.9
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 71.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-06T13:00:00",
+          "consommation_kWh": 65.2
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 119.8
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 148.0
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 139.7
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 126.9
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 190.1
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 60.2
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 96.6
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 51.7
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 161.7
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 59.0
+        },
+        {
+          "compteur_id": "ELEC_0111",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 144.6
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 110.5
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 119.0
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 92.7
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 127.5
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 115.8
+        },
+        {
+          "compteur_id": "ELEC_0253",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 159.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 60.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 189.9
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 149.1
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 158.4
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 71.3
+        },
+        {
+          "compteur_id": "ELEC_0498",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 64.0
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT028",
+      "type_energie": "électricité",
+      "unite": "kWh",
+      "date_generation": "2024-01-15",
+      "mesures": [
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 56.3
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 193.0
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 135.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 173.9
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 135.2
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 81.6
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 159.1
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 82.9
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 74.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 67.1
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 142.5
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 177.6
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 88.7
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 183.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 99.6
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 73.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 157.5
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 91.8
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 184.5
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 53.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 99.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 124.8
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 57.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 170.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 173.6
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 176.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 193.4
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 73.0
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 125.9
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 110.0
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 94.9
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 143.5
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 149.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 188.9
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 110.9
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 190.6
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 85.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 123.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 138.3
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 177.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 170.7
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 139.7
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 178.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 62.3
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 72.5
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 184.5
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 169.0
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 76.6
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 197.6
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 152.8
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 149.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 74.8
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 65.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 50.0
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 184.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 123.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 93.7
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 60.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 59.7
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 89.0
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 155.0
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 141.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 109.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 74.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 117.9
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 94.0
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 110.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 85.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 96.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 86.1
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 55.5
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 181.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 199.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 158.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 153.2
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 157.8
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 68.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 191.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 138.2
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 184.3
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 104.6
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 176.2
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 78.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 148.7
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 156.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 69.9
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 195.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-04T13:00:00",
+          "consommation_kWh": 97.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 180.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 180.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 87.6
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 181.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 56.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T13:00:00",
+          "consommation_kWh": 126.9
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-04T14:00:00",
+          "consommation_kWh": 91.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 112.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 144.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 170.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 50.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 80.3
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 152.1
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 161.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 108.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 138.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 79.5
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 138.6
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 199.5
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 138.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 59.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 112.6
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": 182.7
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-05T15:00:00",
+          "consommation_kWh": 188.5
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 117.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 84.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 88.1
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 84.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 173.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 61.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 130.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": 180.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 168.2
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 149.5
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 137.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 132.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 178.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 108.4
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": 76.6
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-05T15:00:00",
+          "consommation_kWh": 52.1
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 147.0
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 53.1
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 162.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 148.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 112.3
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 159.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 164.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 199.7
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 145.9
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 181.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 50.5
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 166.8
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 191.7
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 164.7
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 125.1
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 130.2
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 150.2
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 62.5
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 103.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 78.4
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 158.8
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-06T13:00:00",
+          "consommation_kWh": 143.1
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 198.8
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 101.3
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 153.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 102.7
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 108.4
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 65.5
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 171.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 78.5
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 166.0
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 60.0
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-07T15:00:00",
+          "consommation_kWh": 84.0
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 133.6
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 98.3
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 78.2
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 52.6
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 105.9
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 175.6
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 179.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 176.5
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 134.2
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 70.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 199.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 101.1
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-07T15:00:00",
+          "consommation_kWh": 54.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 86.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 66.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 149.7
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 154.4
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 92.1
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 197.2
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 104.6
+        },
+        {
+          "compteur_id": "ELEC_0130",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 160.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 197.2
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 156.8
+        },
+        {
+          "compteur_id": "ELEC_0164",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 189.7
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 104.4
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 89.6
+        },
+        {
+          "compteur_id": "ELEC_0171",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 183.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 137.3
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 57.4
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 164.1
+        },
+        {
+          "compteur_id": "ELEC_0261",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 186.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 132.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 153.6
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 132.9
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 184.3
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T12:00:00",
+          "consommation_kWh": 56.1
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T13:00:00",
+          "consommation_kWh": 113.0
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T14:00:00",
+          "consommation_kWh": 90.4
+        },
+        {
+          "compteur_id": "ELEC_0284",
+          "date_mesure": "2024-01-08T15:00:00",
+          "consommation_kWh": 60.3
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT019",
+      "type_energie": "électricité",
+      "unite": "kWh",
+      "date_generation": "2024-01-15",
+      "mesures": [
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 66.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 120.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 131.3
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 190.9
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 87.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 77.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 155.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 171.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 159.3
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 160.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 126.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 50.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 91.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 166.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 132.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 81.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 78.9
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-01T15:00:00",
+          "consommation_kWh": 101.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 111.7
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 90.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 183.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 88.2
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 50.2
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 138.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-01T14:00:00",
+          "consommation_kWh": 153.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 137.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 87.3
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 84.6
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 57.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 109.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 91.5
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 50.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-02T15:00:00",
+          "consommation_kWh": 66.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 66.0
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 71.7
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 167.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 98.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 148.9
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 116.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 71.9
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 78.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 192.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 123.3
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 119.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 183.3
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-02T15:00:00",
+          "consommation_kWh": 118.8
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 66.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 92.5
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 165.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 164.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 118.2
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 83.6
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 175.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 90.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 115.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 167.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 107.7
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 126.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 66.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 128.3
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 90.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 169.9
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T13:00:00",
+          "consommation_kWh": 53.0
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-03T14:00:00",
+          "consommation_kWh": 182.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 87.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 193.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 178.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 188.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 144.1
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 165.3
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 113.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 79.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 96.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 87.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 137.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 150.5
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-04T13:00:00",
+          "consommation_kWh": 134.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 120.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 100.4
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 86.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 84.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-04T13:00:00",
+          "consommation_kWh": 52.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 184.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 180.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 111.9
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 60.9
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 196.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T13:00:00",
+          "consommation_kWh": 70.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-04T14:00:00",
+          "consommation_kWh": 82.8
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 51.8
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 68.0
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 138.3
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 81.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-04T12:00:00",
+          "consommation_kWh": 85.5
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 168.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 144.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 56.6
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 131.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 172.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 111.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 63.3
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 188.7
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 114.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 103.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 74.6
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 197.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 150.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T11:00:00",
+          "consommation_kWh": 173.3
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T12:00:00",
+          "consommation_kWh": 56.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T13:00:00",
+          "consommation_kWh": 174.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T14:00:00",
+          "consommation_kWh": 94.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-05T15:00:00",
+          "consommation_kWh": 117.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 67.7
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 80.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 182.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 114.8
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 175.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 106.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 55.3
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 176.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T13:00:00",
+          "consommation_kWh": 62.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T14:00:00",
+          "consommation_kWh": 61.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-06T15:00:00",
+          "consommation_kWh": 115.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 89.9
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 133.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 192.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 184.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 183.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 199.6
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 135.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 113.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 169.2
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 140.9
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": 169.7
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 79.4
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 165.9
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 63.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 69.0
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 160.6
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 178.6
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 109.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 156.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 57.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 181.4
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-07T15:00:00",
+          "consommation_kWh": 86.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 131.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 130.9
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 128.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 89.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 123.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 71.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 145.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 143.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 158.1
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 160.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 74.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 164.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-07T15:00:00",
+          "consommation_kWh": 166.3
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 54.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 163.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 137.9
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T11:00:00",
+          "consommation_kWh": 78.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T12:00:00",
+          "consommation_kWh": 64.7
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T13:00:00",
+          "consommation_kWh": 130.9
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T14:00:00",
+          "consommation_kWh": 168.1
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-07T15:00:00",
+          "consommation_kWh": 140.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 96.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 169.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 93.5
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 73.9
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-08T12:00:00",
+          "consommation_kWh": 72.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 121.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 186.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 76.4
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 125.2
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T12:00:00",
+          "consommation_kWh": 97.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T13:00:00",
+          "consommation_kWh": 126.1
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-08T14:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 89.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 101.8
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 104.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 129.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T12:00:00",
+          "consommation_kWh": 134.5
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T13:00:00",
+          "consommation_kWh": 72.4
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T14:00:00",
+          "consommation_kWh": 84.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-08T15:00:00",
+          "consommation_kWh": 149.2
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 167.8
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 56.3
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 143.8
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": 81.2
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T08:00:00",
+          "consommation_kWh": 133.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T10:00:00",
+          "consommation_kWh": 143.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T11:00:00",
+          "consommation_kWh": 190.8
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T12:00:00",
+          "consommation_kWh": 77.7
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T13:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0275",
+          "date_mesure": "2024-01-09T14:00:00",
+          "consommation_kWh": 68.4
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T08:00:00",
+          "consommation_kWh": 68.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T10:00:00",
+          "consommation_kWh": 143.8
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T11:00:00",
+          "consommation_kWh": 178.5
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T12:00:00",
+          "consommation_kWh": 192.3
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T13:00:00",
+          "consommation_kWh": 189.6
+        },
+        {
+          "compteur_id": "ELEC_0326",
+          "date_mesure": "2024-01-09T14:00:00",
+          "consommation_kWh": 106.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T08:00:00",
+          "consommation_kWh": 147.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T09:00:00",
+          "consommation_kWh": 86.3
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T10:00:00",
+          "consommation_kWh": 71.2
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T11:00:00",
+          "consommation_kWh": 151.7
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T12:00:00",
+          "consommation_kWh": 128.3
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T13:00:00",
+          "consommation_kWh": 150.0
+        },
+        {
+          "compteur_id": "ELEC_0417",
+          "date_mesure": "2024-01-09T14:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T08:00:00",
+          "consommation_kWh": 163.5
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T09:00:00",
+          "consommation_kWh": 158.3
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T10:00:00",
+          "consommation_kWh": 114.6
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T11:00:00",
+          "consommation_kWh": 194.1
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T12:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0477",
+          "date_mesure": "2024-01-09T13:00:00",
+          "consommation_kWh": 108.5
+        }
+      ]
+    },
+    {
+      "id_batiment": "BAT043",
+      "type_energie": "électricité",
+      "unite": "kWh",
+      "date_generation": "2024-01-15",
+      "mesures": [
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T08:00:00",
+          "consommation_kWh": 73.5
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T09:00:00",
+          "consommation_kWh": 106.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T10:00:00",
+          "consommation_kWh": 181.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T11:00:00",
+          "consommation_kWh": 168.3
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T12:00:00",
+          "consommation_kWh": 105.4
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-01T13:00:00",
+          "consommation_kWh": 78.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T08:00:00",
+          "consommation_kWh": 53.5
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T09:00:00",
+          "consommation_kWh": 106.6
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T10:00:00",
+          "consommation_kWh": 92.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T11:00:00",
+          "consommation_kWh": 136.4
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T12:00:00",
+          "consommation_kWh": 125.8
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T13:00:00",
+          "consommation_kWh": 165.8
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T14:00:00",
+          "consommation_kWh": 105.3
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-02T15:00:00",
+          "consommation_kWh": 125.1
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-03T08:00:00",
+          "consommation_kWh": 99.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-03T09:00:00",
+          "consommation_kWh": 119.9
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-03T10:00:00",
+          "consommation_kWh": 59.2
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-03T11:00:00",
+          "consommation_kWh": 55.6
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-03T12:00:00",
+          "consommation_kWh": 58.6
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-04T08:00:00",
+          "consommation_kWh": 80.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-04T09:00:00",
+          "consommation_kWh": 195.5
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-04T10:00:00",
+          "consommation_kWh": 79.1
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-04T11:00:00",
+          "consommation_kWh": 138.1
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-05T08:00:00",
+          "consommation_kWh": 109.2
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-05T09:00:00",
+          "consommation_kWh": 71.2
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-05T10:00:00",
+          "consommation_kWh": 64.2
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T08:00:00",
+          "consommation_kWh": 120.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T09:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T10:00:00",
+          "consommation_kWh": 196.3
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T11:00:00",
+          "consommation_kWh": 63.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T12:00:00",
+          "consommation_kWh": 123.9
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T13:00:00",
+          "consommation_kWh": 146.6
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-06T14:00:00",
+          "consommation_kWh": 55.9
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-07T08:00:00",
+          "consommation_kWh": 158.5
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-07T09:00:00",
+          "consommation_kWh": 187.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-07T10:00:00",
+          "consommation_kWh": 125.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-08T08:00:00",
+          "consommation_kWh": 198.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-08T09:00:00",
+          "consommation_kWh": 194.1
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-08T10:00:00",
+          "consommation_kWh": 166.8
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-08T11:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-08T12:00:00",
+          "consommation_kWh": 186.7
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-09T08:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-09T09:00:00",
+          "consommation_kWh": 66.0
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-09T10:00:00",
+          "consommation_kWh": 66.8
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T08:00:00",
+          "consommation_kWh": null
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T09:00:00",
+          "consommation_kWh": 153.3
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T10:00:00",
+          "consommation_kWh": 145.5
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T11:00:00",
+          "consommation_kWh": 159.4
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T12:00:00",
+          "consommation_kWh": 139.4
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T13:00:00",
+          "consommation_kWh": 186.2
+        },
+        {
+          "compteur_id": "ELEC_0434",
+          "date_mesure": "2024-01-10T14:00:00",
+          "consommation_kWh": 182.3
+        }
+      ]
+    }
+  ]
+}

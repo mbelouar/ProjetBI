@@ -1,0 +1,39 @@
+# ============================================================================
+# Requirements pour le projet BI GreenCity
+# ============================================================================
+
+# Base de données
+mysql-connector-python==8.2.0
+pymysql==1.1.0
+SQLAlchemy==2.0.23
+
+# Génération de données
+Faker==22.0.0
+pandas==2.1.4
+numpy==1.26.2
+
+# Manipulation de fichiers
+openpyxl==3.1.2
+python-dateutil==2.8.2
+
+# Configuration
+python-dotenv==1.0.0
+configparser==6.0.0
+
+# Logging et monitoring
+loguru==0.7.2
+
+# Automatisation (optionnel)
+apache-airflow==2.8.0
+pendulum==3.0.0
+
+# Reporting et visualisation (optionnel)
+plotly==5.18.0
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Qualité de code
+black==23.12.1
+flake8==7.0.0
+pytest==7.4.3
+

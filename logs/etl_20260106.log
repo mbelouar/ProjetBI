@@ -1,0 +1,107 @@
+[2026-01-06 11:39:50] [INFO] 🚀 Démarrage du processus ETL complet
+[2026-01-06 11:39:50] [INFO] 🔍 Vérification des prérequis...
+[2026-01-06 11:39:50] [SUCCESS] ✅ Tous les prérequis sont OK
+[2026-01-06 11:39:50] [INFO] 
+======================================================================
+[2026-01-06 11:39:50] [INFO] PHASE 1: EXTRACTION
+[2026-01-06 11:39:50] [INFO] ======================================================================
+[2026-01-06 11:39:50] [INFO] ▶ Démarrage: Extraction régions (MySQL) (extract_regions_mysql.py)
+[2026-01-06 11:39:51] [SUCCESS] ✅ Terminé: Extraction régions (MySQL)
+[2026-01-06 11:39:51] [INFO]       2. REG02 - Rabat (Maroc)
+[2026-01-06 11:39:51] [INFO]       3. REG03 - Fès (Maroc)
+[2026-01-06 11:39:51] [INFO]       4. REG04 - Marrakech (Maroc)
+[2026-01-06 11:39:51] [INFO]       5. REG05 - Agadir (Maroc)
+[2026-01-06 11:39:51] [INFO]       ... et 5 autres
+[2026-01-06 11:39:51] [INFO] ▶ Démarrage: Extraction consommation électricité (JSON) (convert_json_elec_to_csv.py)
+[2026-01-06 11:39:52] [SUCCESS] ✅ Terminé: Extraction consommation électricité (JSON)
+[2026-01-06 11:39:52] [INFO]    Conversion Élec terminée !
+[2026-01-06 11:39:52] [INFO] ▶ Démarrage: Extraction consommation gaz (JSON) (convert_json_gaz_to_csv.py)
+[2026-01-06 11:39:53] [SUCCESS] ✅ Terminé: Extraction consommation gaz (JSON)
+[2026-01-06 11:39:53] [INFO]    Traitement de Gaz_consumption_09_2024.json...
+[2026-01-06 11:39:53] [INFO]    Traitement de Gaz_consumption_10_2024.json...
+[2026-01-06 11:39:53] [INFO]    Traitement de Gaz_consumption_11_2024.json...
+[2026-01-06 11:39:53] [INFO]    Traitement de Gaz_consumption_12_2024.json...
+[2026-01-06 11:39:53] [INFO]    ✅ Conversion Gaz terminée ! Fichier généré : gaz_consumption_extracted.csv
+[2026-01-06 11:39:53] [INFO] ▶ Démarrage: Extraction données environnementales (CSV) (convert_csv_environnement_to_extracted.py)
+[2026-01-06 11:39:53] [SUCCESS] ✅ Terminé: Extraction données environnementales (CSV)
+[2026-01-06 11:39:53] [INFO]    ✅ Conversion terminée !
+[2026-01-06 11:39:53] [INFO]       - Fichiers traités: 12
+[2026-01-06 11:39:53] [INFO]       - Lignes écrites: 600
+[2026-01-06 11:39:53] [INFO]       - Doublons supprimés: 12
+[2026-01-06 11:39:53] [INFO]       - Fichier généré: environnement_extracted.csv
+[2026-01-06 11:39:53] [INFO] 
+======================================================================
+[2026-01-06 11:39:53] [INFO] PHASE 2: TRANSFORMATION (Nettoyage & Enrichissement)
+[2026-01-06 11:39:53] [INFO] ======================================================================
+[2026-01-06 11:39:53] [INFO] 
+======================================================================
+[2026-01-06 11:39:53] [INFO] PHASE 3: TRANSFORMATION - PRÉPARATION DES DIMENSIONS
+[2026-01-06 11:39:53] [INFO] ======================================================================
+[2026-01-06 11:39:53] [INFO] ▶ Démarrage: Transformation des dimensions (06_transformation_dimensions.py)
+[2026-01-06 11:39:53] [SUCCESS] ✅ Terminé: Transformation des dimensions
+[2026-01-06 11:39:53] [INFO]    ✨ Caractéristiques:
+[2026-01-06 11:39:53] [INFO]       ✓ SCD Type 2 implémenté (date_debut, date_fin, est_actuel)
+[2026-01-06 11:39:53] [INFO]       ✓ Clés métier préservées (code_*)
+[2026-01-06 11:39:53] [INFO]       ✓ Prêt pour chargement dans le DW
+[2026-01-06 11:39:53] [INFO] 
+======================================================================
+[2026-01-06 11:39:53] [INFO] PHASE 4: TRANSFORMATION - PRÉPARATION DES FAITS
+[2026-01-06 11:39:53] [INFO] ======================================================================
+[2026-01-06 11:39:53] [INFO] ▶ Démarrage: Transformation des tables de faits (07_transformation_faits.py)
+[2026-01-06 11:39:55] [SUCCESS] ✅ Terminé: Transformation des tables de faits
+[2026-01-06 11:39:55] [INFO]       ✓ Calculs de marge et ratios
+[2026-01-06 11:39:55] [INFO]       ✓ Prêt pour chargement dans le DW
+[2026-01-06 11:39:55] [INFO]    ⚠️  Note: Les codes (code_date, code_*) seront convertis en IDs
+[2026-01-06 11:39:55] [INFO]        lors du chargement dans le DW via les lookups des dimensions
+[2026-01-06 11:39:55] [INFO] 
+======================================================================
+[2026-01-06 11:39:55] [INFO] PHASE 5: CHARGEMENT - DIMENSIONS
+[2026-01-06 11:39:55] [INFO] ======================================================================
+[2026-01-06 11:39:55] [INFO] ▶ Démarrage: Chargement des dimensions dans le DW (08_chargement_dimensions.py)
+[2026-01-06 11:39:57] [SUCCESS] ✅ Terminé: Chargement des dimensions dans le DW
+[2026-01-06 11:39:57] [INFO]    ✅ CHARGEMENT DIMENSIONS TERMINÉ !
+[2026-01-06 11:39:57] [INFO]    ============================================================
+[2026-01-06 11:39:57] [INFO]    ✨ Toutes les dimensions sont chargées dans le DW
+[2026-01-06 11:39:57] [INFO]       Prêt pour le chargement des tables de faits
+[2026-01-06 11:39:57] [INFO] 
+======================================================================
+[2026-01-06 11:39:57] [INFO] PHASE 6: CHARGEMENT - TABLES DE FAITS
+[2026-01-06 11:39:57] [INFO] ======================================================================
+[2026-01-06 11:39:57] [INFO] ▶ Démarrage: Chargement fact_consommation (09_chargement_fait_consommation.py)
+[2026-01-06 11:40:18] [SUCCESS] ✅ Terminé: Chargement fact_consommation
+[2026-01-06 11:40:18] [INFO]    ✅ Chargement terminé !
+[2026-01-06 11:40:18] [INFO]       - 0 lignes insérées
+[2026-01-06 11:40:18] [INFO]       - 16377 doublons ignorés
+[2026-01-06 11:40:18] [INFO]       - 0 erreurs (FK invalides)
+[2026-01-06 11:40:18] [INFO] ▶ Démarrage: Chargement fact_rentabilite (10_chargement_fait_rentabilite.py)
+[2026-01-06 11:40:21] [SUCCESS] ✅ Terminé: Chargement fact_rentabilite
+[2026-01-06 11:40:21] [INFO]    ✅ Chargement terminé !
+[2026-01-06 11:40:21] [INFO]       - 381 lignes insérées
+[2026-01-06 11:40:21] [INFO]       - 4619 doublons ignorés
+[2026-01-06 11:40:21] [INFO]       - 0 erreurs (FK invalides)
+[2026-01-06 11:40:21] [INFO] ▶ Démarrage: Chargement fact_environnement (11_chargement_fait_environnement.py)
+[2026-01-06 11:40:22] [SUCCESS] ✅ Terminé: Chargement fact_environnement
+[2026-01-06 11:40:22] [INFO]    ✅ Chargement terminé !
+[2026-01-06 11:40:22] [INFO]       - 0 lignes insérées
+[2026-01-06 11:40:22] [INFO]       - 600 doublons ignorés
+[2026-01-06 11:40:22] [INFO]       - 0 erreurs (FK invalides)
+[2026-01-06 11:40:22] [INFO] 
+======================================================================
+[2026-01-06 11:40:22] [INFO] RÉSUMÉ DE L'EXÉCUTION
+[2026-01-06 11:40:22] [INFO] ======================================================================
+[2026-01-06 11:40:22] [INFO] ✅ Étapes réussies: 10
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Extraction régions (MySQL)
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Extraction consommation électricité (JSON)
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Extraction consommation gaz (JSON)
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Extraction données environnementales (CSV)
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Transformation dimensions
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Transformation faits
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Chargement dimensions
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Chargement fact_consommation
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Chargement fact_rentabilite
+[2026-01-06 11:40:22] [SUCCESS]    ✓ Chargement fact_environnement
+[2026-01-06 11:40:22] [SUCCESS] 
+🎉 Toutes les étapes ont réussi !
+[2026-01-06 11:40:22] [INFO] 
+Fin: 2026-01-06 11:40:22
+[2026-01-06 11:40:22] [INFO] ======================================================================

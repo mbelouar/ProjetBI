@@ -1,0 +1,11 @@
+id_region;nom_region;pays;zone_climatique;population;superficie_km2;date_creation;date_modification;densite_population;est_metropolitaine
+REG01;Casablanca;Maroc;Méditerranéen;309805.0;7441.35;2026-01-04;2026-01-04;41.63;Oui
+REG02;Rabat;Maroc;Continental;1972427.0;1481.43;2026-01-04;2026-01-04;1331.43;Oui
+REG03;Fès;Maroc;Méditerranéen;4674866.0;960.69;2026-01-04;2026-01-04;4866.15;Oui
+REG04;Marrakech;Maroc;Océanique;366612.0;394.99;2026-01-04;2026-01-04;928.16;Non
+REG05;Agadir;Maroc;Continental;2051701.0;5103.02;2026-01-04;2026-01-04;402.06;Oui
+REG06;Tanger;Maroc;Méditerranéen;4808064.0;2068.49;2026-01-04;2026-01-04;2324.43;Oui
+REG07;Meknès;Maroc;Océanique;1949189.0;4547.17;2026-01-04;2026-01-04;428.66;Oui
+REG08;Oujda;Maroc;Saharien;154515.0;7612.19;2026-01-04;2026-01-04;20.3;Non
+REG09;Kenitra;Maroc;Continental;3645146.0;3468.48;2026-01-04;2026-01-04;1050.93;Oui
+REG10;Tétouan;Maroc;Continental;1906182.0;9576.41;2026-01-04;2026-01-04;199.05;Oui

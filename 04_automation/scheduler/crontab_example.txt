@@ -1,0 +1,45 @@
+# ============================================================================
+# Configuration Crontab pour l'ETL GreenCity
+# ============================================================================
+# Installation:
+#   1. Éditer le crontab: crontab -e
+#   2. Ajouter les lignes ci-dessous
+#   3. Sauvegarder et quitter
+# ============================================================================
+
+# Exécuter l'ETL tous les jours à 2h00 du matin
+0 2 * * * /bin/bash /Users/mohammedbelouarraq/Desktop/BI/04_automation/scheduler/run_etl.sh >> /Users/mohammedbelouarraq/Desktop/BI/logs/cron.log 2>&1
+
+# Exemples d'autres fréquences:
+
+# Toutes les heures
+# 0 * * * * /bin/bash /Users/mohammedbelouarraq/Desktop/BI/04_automation/scheduler/run_etl.sh
+
+# Tous les lundis à 3h00
+# 0 3 * * 1 /bin/bash /Users/mohammedbelouarraq/Desktop/BI/04_automation/scheduler/run_etl.sh
+
+# Le premier jour de chaque mois à 1h00
+# 0 1 1 * * /bin/bash /Users/mohammedbelouarraq/Desktop/BI/04_automation/scheduler/run_etl.sh
+
+# Toutes les 6 heures
+# 0 */6 * * * /bin/bash /Users/mohammedbelouarraq/Desktop/BI/04_automation/scheduler/run_etl.sh
+
+# ============================================================================
+# Format du crontab:
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── heure (0 - 23)
+# │ │ ┌───────────── jour du mois (1 - 31)
+# │ │ │ ┌───────────── mois (1 - 12)
+# │ │ │ │ ┌───────────── jour de la semaine (0 - 6) (Dimanche=0)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * * commande à exécuter
+# ============================================================================
+
+# Vérifier que le cron est actif:
+# sudo service cron status    # Linux
+# sudo launchctl list | grep cron    # MacOS
+
+# Voir les logs du cron:
+# tail -f /Users/mohammedbelouarraq/Desktop/BI/logs/cron.log
+
